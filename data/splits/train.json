@@ -1,0 +1,1093 @@
+[
+  {
+    "question": "Frequent changes on HW2 checklist\nI noticed that the HW2 checklist has been updated multiple times, and the requirements appear to keep changing. I have just finished revising my work according to the previous updated checklist, only to find that the requirements have changed again. For example, the latest version asks to \u201cstate the quantitative performance difference, e.g., CNN outperformed RNN by X%,\u201d which was never mentioned in the assignment document. Adding such requirements on the last day feels unfair to students who submitted earlier. With the deadline only half a day away, this seems unfair to students who have already completed the assignment based on earlier versions. Such requirements should have been finalized much earlier to ensure fairness.",
+    "answer": "I apologize for my earlier response. I will not add any further additions/clarifications to the checklist. The motivation for my additions was not to alter the requirements of the assignment, but to provide a clearer understanding of what we expected from you. I did this in response to Piazza questions from students who were unclear about the requirements. This was done to prevent you from losing points due to differing interpretations of the instructions that would cause you to lose points, e.g., I interpreted comparing the CNN and RNN as comparing their performance. I acknowledge that resubmissions are inconvenient, which is why I made a Canvas announcement to warn everyone. Yes, it would have been better if the checklist had been more comprehensive from the start to avoid these clarifying questions in the first place (I wrongly assumed that this was the case since this checklist has been used in several previous iterations of this class).",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_26"
+  },
+  {
+    "question": "OH\nDo we still have OH for today?",
+    "answer": "It appears @Mingshi Chen didn't make it to their office hour today. I'll be on the same Zoom link from 12:45-1:45pm",
+    "source": "piazza",
+    "tags": [
+      "other"
+    ],
+    "type": "main",
+    "pair_id": "piazza_67"
+  },
+  {
+    "question": "How do I solve the build and train an rnn on mnist in assignment 2?",
+    "answer": "# 3. Build and Train an RNN on MNIST\n\nUse the starter code `rnnMNISTStarterCode.py`.\n\nMNIST images are 28\u00d728; the RNN will process input **one row (28 pixels) at a time**.\n\n---\n\n## a) Set Up an RNN\n\nModify the following:\n\n- Hidden layer size  \n- Learning rate  \n- Training iterations  \n- Cost function (use softmax cross entropy with logits)  \n- Optimizer  \n\n---\n\n## b) Try LSTM or GRU\n\nExperiment using:\n\n- `torch.nn.GRU`\n- `torch.nn.LSTM`\n\n### Required outputs:\n- Train accuracy  \n- Test accuracy  \n- Train loss  \n\nTry varying hidden units and compare performance.\n\n---\n\n## c) Compare Against the CNN\n\nCompare results from:\n\n- This RNN  \n- The CNN you built in Assignment 1  \n\nDiscuss differences in:\n\n- Accuracy  \n- Training behavior  \n- Strengths/weaknesses  \n\n---\n\n# Collaboration Policy\n\nCollaboration is encouraged for discussing ideas, but all write-ups must be done **independently**.\n\n---\n\n# Plagiarism Policy\n\nPlagiarism is strictly prohibited.  \nCite all external sources explicitly.",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "3",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Page limitation for project proposal\nDoes the reference page count towards the 1-4 pages limitations? If so, are we allowed to slightly go over the page limitations (e.g. 5-6 pages in total) without penalty?",
+    "answer": "@113",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_11"
+  },
+  {
+    "question": "How do I solve the visualizing and understanding convolutional networks in assignment 2?",
+    "answer": "# 2. Visualizing and Understanding Convolutional Networks\n\nRead the paper:  \n**\"Visualizing and Understanding Convolutional Networks\" \u2014 Zeiler & Fergus**\n\n### Task:\n- Summarize the key ideas of the paper.\n\n### Optional:\nApply a visualization method (e.g., deconvolutional network) to the model trained in Problem 1.\n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Bibliography/references in Proposal\nFor the page count max being 4, does that include the ciatations/references? Or could I have 4 pages of writing/images and then have an additional page for my references?",
+    "answer": "4 pages of writing/images + additional pages for references",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_19"
+  },
+  {
+    "question": "Question sbout 1.b.2\nHi team, For the task 1.b.2 \u201cDerive the derivatives of Tanh, Sigmoid, and ReLU\u201d, do we need to include the mathematical derivations in the report, or is it sufficient to just complete the code implementation? (what's the difference with 1.b.3) Thanks!",
+    "answer": "Both",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_78"
+  },
+  {
+    "question": "What is problem 1 in assignment 1?",
+    "answer": "# 1. Backpropagation in a Simple Neural Network\n\nYou will implement backpropagation for a 3-layer neural network. Starter code is provided in  \n`three_layer_neural_network.py`.\n\n---\n\n## a) Dataset \u2014 Make Moons\n\nUncomment the dataset generation section:\n\n```python\n# generate and visualize Make-Moons dataset\nX, y = generate_data()\nplt.scatter(X[:, 0], X[:, 1], s=40, c=y, cmap=plt.cm.Spectral)\n```\n\nRun it and include the figure in your report.\n\n---\n\n## b) Activation Functions\n\nImplement:\n\n### 1. `actFun(self, z, type)`\nWhere `type \u2208 {'Tanh', 'Sigmoid', 'ReLU'}`.\n\n### 2. Derive derivatives of:\n- Tanh  \n- Sigmoid  \n- ReLU  \n\n### 3. Implement:\n`diff_actFun(self, z, type)`  \nCompute derivatives for all three activations.\n\n---\n\n## c) Build the 3-Layer Network\n\nNetwork structure:\n\n- Input: 2 nodes  \n- Hidden layer: variable size  \n- Output: 2 nodes (probabilities for 2 classes)\n\nEquations:\n\n```\nz1 = W1x + b1\na1 = actFun(z1)\nz2 = W2a1 + b2\na2 = \u0177 = softmax(z2)\n```\n\nLoss function (cross entropy):\n\n```\nL = -(1/N) \u03a3_n \u03a3_i y_n,i log(\u0177_n,i)\n```\n\n### Implement:\n\n1. `feedforward(self, X, actFun)`  \n   Computes probabilities.\n\n2. `calculate_loss(self, X, y)`  \n   Computes cross-entropy loss.\n\n---\n\n## d) Backpropagation\n\n### 1. Derive gradients:\n- \u2202L/\u2202W2  \n- \u2202L/\u2202b2  \n- \u2202L/\u2202W1  \n- \u2202L/\u2202b1  \n\n### 2. Implement in code:\n`backprop(self, X, y)`\n\n---\n\n## e) Training\n\nTraining code is already provided.\n\n### 1. Train using activation functions:\n- Tanh  \n- Sigmoid  \n- ReLU  \n\nInclude figures and describe differences.\n\nRemove dataset visualization (as instructed).\n\n### 2. Vary hidden layer size  \nTrain again (use Tanh). Describe the effect on accuracy and decision boundary.\n\n---\n\n## f) Build a Deeper Network (n-layer)\n\nWrite a new file `n_layer_neural_network.py`.\n\nYour implementation must support:\n\n- Arbitrary number of layers  \n- Arbitrary layer sizes  \n\n### Suggested structure (optional):\n\n1. Create class: `DeepNeuralNetwork(NeuralNetwork)`  \n2. Override:\n   - feedforward  \n   - backprop  \n   - calculate_loss  \n   - fit_model  \n3. Create a `Layer()` class  \n4. Use it to build feedforward/backprop modularly  \n5. Include L2 regularization in:\n   - Loss  \n   - Gradients  \n\n### Experiments:\n\n- Vary:\n  - Number of layers  \n  - Hidden sizes  \n  - Activation functions  \n  - Regularization  \n\nInclude:\n- Decision boundary plots  \n- Interesting observations  \n\n### Train on a second dataset  \nPick any Scikit-learn dataset or another dataset you like.  \nDescribe:\n- Dataset  \n- Network configuration  \n- Observations  \n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "1",
+      "problem": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Slides\nHi, Where can we download the most updated slides? The slides from the course website is missing some contents. Thanks.",
+    "answer": "Slides for Sep 24, Oct 1, and Oct 8 are updated.",
+    "source": "piazza",
+    "tags": [
+      "logistics"
+    ],
+    "type": "main",
+    "pair_id": "piazza_89"
+  },
+  {
+    "question": "What do I need to implement for problem 1 in assignment 1?",
+    "answer": "# 1. Backpropagation in a Simple Neural Network\n\nYou will implement backpropagation for a 3-layer neural network. Starter code is provided in  \n`three_layer_neural_network.py`.\n\n---\n\n## a) Dataset \u2014 Make Moons\n\nUncomment the dataset generation section:\n\n```python\n# generate and visualize Make-Moons dataset\nX, y = generate_data()\nplt.scatter(X[:, 0], X[:, 1], s=40, c=y, cmap=plt.cm.Spectral)\n```\n\nRun it and include the figure in your report.\n\n---\n\n## b) Activation Functions\n\nImplement:\n\n### 1. `actFun(self, z, type)`\nWhere `type \u2208 {'Tanh', 'Sigmoid', 'ReLU'}`.\n\n### 2. Derive derivatives of:\n- Tanh  \n- Sigmoid  \n- ReLU  \n\n### 3. Implement:\n`diff_actFun(self, z, type)`  \nCompute derivatives for all three activations.\n\n---\n\n## c) Build the 3-Layer Network\n\nNetwork structure:\n\n- Input: 2 nodes  \n- Hidden layer: variable size  \n- Output: 2 nodes (probabilities for 2 classes)\n\nEquations:\n\n```\nz1 = W1x + b1\na1 = actFun(z1)\nz2 = W2a1 + b2\na2 = \u0177 = softmax(z2)\n```\n\nLoss function (cross entropy):\n\n```\nL = -(1/N) \u03a3_n \u03a3_i y_n,i log(\u0177_n,i)\n```\n\n### Implement:\n\n1. `feedforward(self, X, actFun)`  \n   Computes probabilities.\n\n2. `calculate_loss(self, X, y)`  \n   Computes cross-entropy loss.\n\n---\n\n## d) Backpropagation\n\n### 1. Derive gradients:\n- \u2202L/\u2202W2  \n- \u2202L/\u2202b2  \n- \u2202L/\u2202W1  \n- \u2202L/\u2202b1  \n\n### 2. Implement in code:\n`backprop(self, X, y)`\n\n---\n\n## e) Training\n\nTraining code is already provided.\n\n### 1. Train using activation functions:\n- Tanh  \n- Sigmoid  \n- ReLU  \n\nInclude figures and describe differences.\n\nRemove dataset visualization (as instructed).\n\n### 2. Vary hidden layer size  \nTrain again (use Tanh). Describe the effect on accuracy and decision boundary.\n\n---\n\n## f) Build a Deeper Network (n-layer)\n\nWrite a new file `n_layer_neural_network.py`.\n\nYour implementation must support:\n\n- Arbitrary number of layers  \n- Arbitrary layer sizes  \n\n### Suggested structure (optional):\n\n1. Create class: `DeepNeuralNetwork(NeuralNetwork)`  \n2. Override:\n   - feedforward  \n   - backprop  \n   - calculate_loss  \n   - fit_model  \n3. Create a `Layer()` class  \n4. Use it to build feedforward/backprop modularly  \n5. Include L2 regularization in:\n   - Loss  \n   - Gradients  \n\n### Experiments:\n\n- Vary:\n  - Number of layers  \n  - Hidden sizes  \n  - Activation functions  \n  - Regularization  \n\nInclude:\n- Decision boundary plots  \n- Interesting observations  \n\n### Train on a second dataset  \nPick any Scikit-learn dataset or another dataset you like.  \nDescribe:\n- Dataset  \n- Network configuration  \n- Observations  \n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "1",
+      "problem": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Are there any restrictions for the final project? Can I undertake the project of LLM for extracting case information and completing RS?",
+    "answer": "The only restriction is that the final project must use deep learning, which LLMs fall under. You'll get further feedback when you submit your project proposal.",
+    "source": "piazza",
+    "tags": [
+      "project",
+      "pin"
+    ],
+    "type": "followup",
+    "parent_question": "Final Project Presentation\nI noticed that the date of the final project presentation on the schedule is from December 10th to December 17th. Do we need to present it in class or just upload and submit it within this period of time?",
+    "pair_id": "piazza_2"
+  },
+  {
+    "question": "What do I need to implement for problem 3 in assignment 2?",
+    "answer": "# 3. Build and Train an RNN on MNIST\n\nUse the starter code `rnnMNISTStarterCode.py`.\n\nMNIST images are 28\u00d728; the RNN will process input **one row (28 pixels) at a time**.\n\n---\n\n## a) Set Up an RNN\n\nModify the following:\n\n- Hidden layer size  \n- Learning rate  \n- Training iterations  \n- Cost function (use softmax cross entropy with logits)  \n- Optimizer  \n\n---\n\n## b) Try LSTM or GRU\n\nExperiment using:\n\n- `torch.nn.GRU`\n- `torch.nn.LSTM`\n\n### Required outputs:\n- Train accuracy  \n- Test accuracy  \n- Train loss  \n\nTry varying hidden units and compare performance.\n\n---\n\n## c) Compare Against the CNN\n\nCompare results from:\n\n- This RNN  \n- The CNN you built in Assignment 1  \n\nDiscuss differences in:\n\n- Accuracy  \n- Training behavior  \n- Strengths/weaknesses  \n\n---\n\n# Collaboration Policy\n\nCollaboration is encouraged for discussing ideas, but all write-ups must be done **independently**.\n\n---\n\n# Plagiarism Policy\n\nPlagiarism is strictly prohibited.  \nCite all external sources explicitly.",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "3",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "What are the submission instructions for assignment 0?",
+    "answer": "## Submission Instructions\n\nSubmit a **PDF** containing intermediate and final results plus any necessary code on Canvas.\n\n---",
+    "metadata": {
+      "type": "assignment_submission",
+      "assignment": "0",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "When is assignment 1 due?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 1\n\n**Due: Oct 7, 2025, 11:59 p.m. via Canvas**\n\n---",
+    "metadata": {
+      "type": "assignment_due_date",
+      "assignment": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Dropout in 4-layer DCN impelmentation\nI have a question regarding the CNN architecture for Part 2. According to the assignment instructions, the required architecture is: conv1(5-5-1-32)- ReLU- maxpool(2-2)- conv2(5-5-32-64)- ReLU- maxpool(2-2)- fc(1024)- ReLU- DropOut(0.5)- Softmax(10) Based on this specification, it appears that Dropout should only be applied once, after the first fully connected layer (fc1). However, in the provided skeleton code, the __init__ method includes: class Net(nn.Module): def __init__(self): super(Net, self).__init__() self.conv1 = [inset-code] self.conv2 = [inset-code] self.conv2_drop = [inset-code] # This line self.fc1 = [inset-code] self.fc2 = [inset-code] This suggests defining a conv2_drop layer, which would imply a second Dropout after conv2. So, Should we: implement conv2_drop (Dropout after conv2 layer) in addition to the Dropout after fc1, i.e. conv1(5-5-1-32)- ReLU- maxpool(2-2)- conv2(5-5-32-64)- ReLU- maxpool(2-2)- DropOut2d(0.5) - fc(1024)- ReLU- DropOut(0.5)- Softmax(10) ? only implement Dropout after fc1 as specified in the architecture diagram, and ingore the conv2_drop in the __init__ method? Thanks for your clarification!",
+    "answer": "Good catch. Option 1. implement conv2_drop (Dropout after conv2 layer) in addition to the Dropout after fc1 Option 2. only implement dropout layer after the fc layer. You can build the basic model as described in the instructions, but you\u2019re encouraged to explore, for example, adding more layers or adding dropout.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_70"
+  },
+  {
+    "question": "What do I need to do for assignment 0?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 0  \n\n**Due: September 16, 2025, 11:59 p.m. via Canvas**\n\nThis assignment is to help you prepare for future assignments. You must submit your report as a **PDF file** on Rice Canvas.\n\n---\n\n## 1. Python Machine Learning Stack (Anaconda)\n\nYou will use Python in this course. To prepare for future assignments and the final project, install Python and its packages using **Anaconda**, a high-performance distribution of Python and R including 100+ popular packages.\n\nFollow the instructions: **Installing Anaconda**.\n\nConfirm installation using:\n\n```\nconda list\n```\n\nYou should see the list of installed packages.\n\nYou can also check using:\n\n```\npython\n```\n\nIf Anaconda is installed, the startup message will include **\u201cContinuum Analytics, Inc.\u201d**  \nExit with:\n\n```\nquit()\n```\n\nRead the **Conda Cheat Sheet** to learn basic `conda` commands.\n\n### Task 1  \nRun:\n\n```\nconda info\n```\n\nPaste the result into your report.\n\n---\n\n## 2. Interactive Terminal (IPython/Jupyter)\n\nIPython/Jupyter provides an interactive computational environment with code execution, text, math, plots, and media.\n\nFollow:\n\n- IPython Tutorial  \n- Jupyter Documentation  \n\nSee also: **Gallery of Jupyter Notebooks**\n\n---\n\n## 3. Transition from MATLAB to Python\n\nMATLAB is powerful, but Python offers better memory efficiency and speed for data science.\n\nRead: **NumPy for MATLAB Users**\n\nTo run Python on macOS/Linux:\n\n```\npython\n```\n\nWindows users: follow **Running Python in Windows**.\n\nBefore running the examples in the tutorial, import:\n\n```python\nimport numpy as np\nimport scipy.linalg\n```\n\n### Task 2  \nRun all Python commands in the **\u201cLinear Algebra Equivalents\u201d** table from the tutorial using IPython.  \nPaste results in your report using any matrix of your choice.\n\n*(Optional)*  \nComplete the Stanford NumPy Tutorial.\n\n---\n\n## 4. Plotting (Matplotlib/PyPlot)\n\nMatplotlib is the main Python plotting library. See the **Matplotlib Gallery**.\n\nPyplot provides MATLAB-style plotting functions. Read the **Pyplot Tutorial**.\n\n### Task 3  \nRun this script in IPython and paste the generated figure into your report:\n\n```python\nimport matplotlib.pyplot as plt\n\nplt.plot([1,2,3,4], [1,2,7,14])\nplt.axis([0, 6, 0, 20])\nplt.show()\n```\n\n### Task 4  \nUse Matplotlib to create a figure of your choice.  \nPaste the code and figure into your report.\n\n---\n\n## 5. Version Control System (GitHub)\n\nGit helps manage changes in collaborative projects.  \nRead: **Why VCS is necessary**\n\nRegister for a **GitHub Student Account** for free private repos and complete the GitHub tutorials.\n\n### Task 5  \nPaste your GitHub account (username/profile link) into your report.\n\n---\n\n## 6. Integrated Development Environment (IDE)\n\nRecommended Python IDEs: **PyCharm**, **Spyder**, **Google Colab**\n\nFor PyCharm:\n\n- Apply for a free student license  \n- Install PyCharm  \n- Follow PyCharm Tutorials (including VCS setup)  \n- See PyCharm debugging guide  \n\n### Task 6  \nStart a new project in your preferred IDE.  \nCommit and push it to GitHub as a **public project**.  \nPaste the project link into your report.\n\n---",
+    "metadata": {
+      "type": "assignment_requirements",
+      "assignment": "0",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "What do I need to implement for problem 2 in assignment 1?",
+    "answer": "# 2. Training a Simple Deep Convolutional Network on MNIST\n\nStarter code provided on Canvas.  \nReview tutorial: **Getting Started with PyTorch**.\n\nMNIST:\n- 55,000 training  \n- 10,000 test  \n- 5,000 validation  \n- Each image is 28\u00d728  \n\n---\n\n## a) Build and Train a 4-Layer DCN\n\nArchitecture:\n\n```\nconv1(5\u00d75\u00d71\u219232) \u2192 ReLU \u2192 maxpool(2\u00d72)\nconv2(5\u00d75\u00d732\u219264) \u2192 ReLU \u2192 maxpool(2\u00d72)\nfc(1024) \u2192 ReLU \u2192 Dropout(0.5) \u2192 Softmax(10)\n```\n\nSteps:\n\n1. Read ConvNet tutorial  \n2. Load MNIST (use torchvision)  \n3. Complete class `Net()`  \n4. Complete training function `train()`  \n5. Use TensorBoard to visualize training loss  \n6. Report test accuracy  \n\nInclude TensorBoard plots.\n\n---\n\n## b) More Training Visualization\n\nAdd TensorBoard logging for each 100 iterations:\n\n- Weights  \n- Biases  \n- Net inputs  \n- ReLU activations  \n- Max-pool activations  \n\nAlso log after each epoch:\n\n- Validation error  \n- Test error  \n\nInclude figures.\n\n---\n\n## c) More Experiments\n\nTry different:\n\n- Activations:\n  - tanh, sigmoid, leaky-ReLU, MaxOut  \n- Initialization:\n  - Xavier  \n- Training algorithms:\n  - SGD  \n  - Momentum  \n  - Adagrad  \n\nInclude TensorBoard figures and descriptions.\n\n---\n\n# Collaboration Policy\n\nCollaboration allowed for ideas.  \nWrite-ups must be individual.\n\n---\n\n# Plagiarism Policy\n\nNo plagiarism allowed.  \nCite all sources.\n\n---\n\n# LLM Policy\n\n**LLMs (ChatGPT, Copilot, etc.) are *not permitted* for coding in Assignment 1.**  \nAll coding must be your own.",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "1",
+      "problem": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Yeah then is it okay if I have only used one hyperparameter combination to train the RNN right? I am not sure if I can classify that as the best model but I got a good accuracy, but here's the thing we wont exactly know which our best model is unless we have explicitly tried different combination, cause idk that seems bit weird!",
+    "answer": "Yes, one hyperparameter combination is good. I've rephrased this to be more clear \"Report Train and test accuracy for your RNN\".",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "followup",
+    "parent_question": "Confusion about parameters results in Part 3\nHi, What is the least number we need to record of results with different hyperparameters in Part 3 (a) and (b)? Additionally, what metrics of the RNN need to be documented in RNN result documented (10 pts) ? Thanks.",
+    "pair_id": "piazza_34"
+  },
+  {
+    "question": "Deliverables for the Final Project Submission\nI have a quick question\u2026 what are all the deliverables for the Final Submission of the project apart from the proposal and the presentation.. like do we need to give any write ups or code repositories or anything as such??",
+    "answer": "Thank you for the reminder, @109",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_21"
+  },
+  {
+    "question": "question on 2b\nFor question 2b weights and biases, do we need to include all figures, e.g. weights figures of conv1, conv2, fc1, fc2? And for each we need to include max, min, std, mean, and histogram, correct? Thank you.",
+    "answer": "Yes, that's correct @24",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_53"
+  },
+  {
+    "question": "Q1c\nFor Q1c, do we need to visualize at least three hyperparameter combinations, or just one combination?",
+    "answer": "One combination is good",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_24"
+  },
+  {
+    "question": "What is problem 2 in assignment 1?",
+    "answer": "# 2. Training a Simple Deep Convolutional Network on MNIST\n\nStarter code provided on Canvas.  \nReview tutorial: **Getting Started with PyTorch**.\n\nMNIST:\n- 55,000 training  \n- 10,000 test  \n- 5,000 validation  \n- Each image is 28\u00d728  \n\n---\n\n## a) Build and Train a 4-Layer DCN\n\nArchitecture:\n\n```\nconv1(5\u00d75\u00d71\u219232) \u2192 ReLU \u2192 maxpool(2\u00d72)\nconv2(5\u00d75\u00d732\u219264) \u2192 ReLU \u2192 maxpool(2\u00d72)\nfc(1024) \u2192 ReLU \u2192 Dropout(0.5) \u2192 Softmax(10)\n```\n\nSteps:\n\n1. Read ConvNet tutorial  \n2. Load MNIST (use torchvision)  \n3. Complete class `Net()`  \n4. Complete training function `train()`  \n5. Use TensorBoard to visualize training loss  \n6. Report test accuracy  \n\nInclude TensorBoard plots.\n\n---\n\n## b) More Training Visualization\n\nAdd TensorBoard logging for each 100 iterations:\n\n- Weights  \n- Biases  \n- Net inputs  \n- ReLU activations  \n- Max-pool activations  \n\nAlso log after each epoch:\n\n- Validation error  \n- Test error  \n\nInclude figures.\n\n---\n\n## c) More Experiments\n\nTry different:\n\n- Activations:\n  - tanh, sigmoid, leaky-ReLU, MaxOut  \n- Initialization:\n  - Xavier  \n- Training algorithms:\n  - SGD  \n  - Momentum  \n  - Adagrad  \n\nInclude TensorBoard figures and descriptions.\n\n---\n\n# Collaboration Policy\n\nCollaboration allowed for ideas.  \nWrite-ups must be individual.\n\n---\n\n# Plagiarism Policy\n\nNo plagiarism allowed.  \nCite all sources.\n\n---\n\n# LLM Policy\n\n**LLMs (ChatGPT, Copilot, etc.) are *not permitted* for coding in Assignment 1.**  \nAll coding must be your own.",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "1",
+      "problem": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Poster Availability Form Typos\nThe dates in the google form are not correct (numerical dates and weekday names), and some of the time slots repeat.",
+    "answer": "Fixed. Sorry, I forgot to update the dates and weekday names from last year. I do not see repeated time slots",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_9"
+  },
+  {
+    "question": "Hyperparameters in report\nHello, Do we need to report all hyperparameter combinations and their related results? Or just report one hyperparameter combination with higher than 55% accuracy? Thanks.",
+    "answer": "From the checklist \"For at least three hyperparameter combinations (including your best combination)\". Also, please make your post public to help your classmates.",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_39"
+  },
+  {
+    "question": "What are the requirements for problem 1 in assignment 1?",
+    "answer": "# 1. Backpropagation in a Simple Neural Network\n\nYou will implement backpropagation for a 3-layer neural network. Starter code is provided in  \n`three_layer_neural_network.py`.\n\n---\n\n## a) Dataset \u2014 Make Moons\n\nUncomment the dataset generation section:\n\n```python\n# generate and visualize Make-Moons dataset\nX, y = generate_data()\nplt.scatter(X[:, 0], X[:, 1], s=40, c=y, cmap=plt.cm.Spectral)\n```\n\nRun it and include the figure in your report.\n\n---\n\n## b) Activation Functions\n\nImplement:\n\n### 1. `actFun(self, z, type)`\nWhere `type \u2208 {'Tanh', 'Sigmoid', 'ReLU'}`.\n\n### 2. Derive derivatives of:\n- Tanh  \n- Sigmoid  \n- ReLU  \n\n### 3. Implement:\n`diff_actFun(self, z, type)`  \nCompute derivatives for all three activations.\n\n---\n\n## c) Build the 3-Layer Network\n\nNetwork structure:\n\n- Input: 2 nodes  \n- Hidden layer: variable size  \n- Output: 2 nodes (probabilities for 2 classes)\n\nEquations:\n\n```\nz1 = W1x + b1\na1 = actFun(z1)\nz2 = W2a1 + b2\na2 = \u0177 = softmax(z2)\n```\n\nLoss function (cross entropy):\n\n```\nL = -(1/N) \u03a3_n \u03a3_i y_n,i log(\u0177_n,i)\n```\n\n### Implement:\n\n1. `feedforward(self, X, actFun)`  \n   Computes probabilities.\n\n2. `calculate_loss(self, X, y)`  \n   Computes cross-entropy loss.\n\n---\n\n## d) Backpropagation\n\n### 1. Derive gradients:\n- \u2202L/\u2202W2  \n- \u2202L/\u2202b2  \n- \u2202L/\u2202W1  \n- \u2202L/\u2202b1  \n\n### 2. Implement in code:\n`backprop(self, X, y)`\n\n---\n\n## e) Training\n\nTraining code is already provided.\n\n### 1. Train using activation functions:\n- Tanh  \n- Sigmoid  \n- ReLU  \n\nInclude figures and describe differences.\n\nRemove dataset visualization (as instructed).\n\n### 2. Vary hidden layer size  \nTrain again (use Tanh). Describe the effect on accuracy and decision boundary.\n\n---\n\n## f) Build a Deeper Network (n-layer)\n\nWrite a new file `n_layer_neural_network.py`.\n\nYour implementation must support:\n\n- Arbitrary number of layers  \n- Arbitrary layer sizes  \n\n### Suggested structure (optional):\n\n1. Create class: `DeepNeuralNetwork(NeuralNetwork)`  \n2. Override:\n   - feedforward  \n   - backprop  \n   - calculate_loss  \n   - fit_model  \n3. Create a `Layer()` class  \n4. Use it to build feedforward/backprop modularly  \n5. Include L2 regularization in:\n   - Loss  \n   - Gradients  \n\n### Experiments:\n\n- Vary:\n  - Number of layers  \n  - Hidden sizes  \n  - Activation functions  \n  - Regularization  \n\nInclude:\n- Decision boundary plots  \n- Interesting observations  \n\n### Train on a second dataset  \nPick any Scikit-learn dataset or another dataset you like.  \nDescribe:\n- Dataset  \n- Network configuration  \n- Observations  \n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "1",
+      "problem": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "A1 1b.2 and 1d.1 Clarification\nFor these parts asking to derive mathematically, do we need to show the step by step process to get there. Or can we simply put in a Jupyter text cell the final calculation? For example: 1b.2 d/dz tanh(z) = ... d/dz sigmoid(z) = ... d/dz relu(z) = ... 1d.1 dL/dW2 = ... dL/db2 = ... dL/dW1 = ... dL/db1 = ... Would this be sufficient for these parts, or should we show the step by step process for each equation?",
+    "answer": "Fo 1.b.2: yes (see @34_f2 for formatting) For 1.d.1: @36",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_54"
+  },
+  {
+    "question": "AI usage?\nI'm aware that we are suppose to deliver our own code, but just wondering for trivial part (like logging and formatting plot), can we use AI code? Thanks",
+    "answer": "Dr Patel has decided that generative AI can not be used for any part of HW2",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_42"
+  },
+  {
+    "question": "and is it okay if I write a new ipynb file for this, coz I have already trained for one set and will just be a problem otherwise?",
+    "answer": "Sorry, I was misreading the assignment. Since the assignment didn't explicitly ask to report performance for different hyperparameters of your RNN, I have decided to remove this requirement from the checklist. You only need to report the performance of your (best) RNN, which I suspect everyone was already doing in order to answer the last question comparing RNN vs CNN. Hopefully, this means you won't have to resubmit Since the assignment did explicitly ask to \"change the number of hidden units and see how that affects the loss and accuracy\", I have included this in the checklist.",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "followup",
+    "parent_question": "Confusion about parameters results in Part 3\nHi, What is the least number we need to record of results with different hyperparameters in Part 3 (a) and (b)? Additionally, what metrics of the RNN need to be documented in RNN result documented (10 pts) ? Thanks.",
+    "pair_id": "piazza_33"
+  },
+  {
+    "question": "How do I solve the training a simple deep convolutional network on mnist in assignment 1?",
+    "answer": "# 2. Training a Simple Deep Convolutional Network on MNIST\n\nStarter code provided on Canvas.  \nReview tutorial: **Getting Started with PyTorch**.\n\nMNIST:\n- 55,000 training  \n- 10,000 test  \n- 5,000 validation  \n- Each image is 28\u00d728  \n\n---\n\n## a) Build and Train a 4-Layer DCN\n\nArchitecture:\n\n```\nconv1(5\u00d75\u00d71\u219232) \u2192 ReLU \u2192 maxpool(2\u00d72)\nconv2(5\u00d75\u00d732\u219264) \u2192 ReLU \u2192 maxpool(2\u00d72)\nfc(1024) \u2192 ReLU \u2192 Dropout(0.5) \u2192 Softmax(10)\n```\n\nSteps:\n\n1. Read ConvNet tutorial  \n2. Load MNIST (use torchvision)  \n3. Complete class `Net()`  \n4. Complete training function `train()`  \n5. Use TensorBoard to visualize training loss  \n6. Report test accuracy  \n\nInclude TensorBoard plots.\n\n---\n\n## b) More Training Visualization\n\nAdd TensorBoard logging for each 100 iterations:\n\n- Weights  \n- Biases  \n- Net inputs  \n- ReLU activations  \n- Max-pool activations  \n\nAlso log after each epoch:\n\n- Validation error  \n- Test error  \n\nInclude figures.\n\n---\n\n## c) More Experiments\n\nTry different:\n\n- Activations:\n  - tanh, sigmoid, leaky-ReLU, MaxOut  \n- Initialization:\n  - Xavier  \n- Training algorithms:\n  - SGD  \n  - Momentum  \n  - Adagrad  \n\nInclude TensorBoard figures and descriptions.\n\n---\n\n# Collaboration Policy\n\nCollaboration allowed for ideas.  \nWrite-ups must be individual.\n\n---\n\n# Plagiarism Policy\n\nNo plagiarism allowed.  \nCite all sources.\n\n---\n\n# LLM Policy\n\n**LLMs (ChatGPT, Copilot, etc.) are *not permitted* for coding in Assignment 1.**  \nAll coding must be your own.",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "1",
+      "problem": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Should we consider summation and N when deriving the derivatives?\nProblem 1d in part 1 asks us to derive the derivative of W1, b1, W2, b2 relative to the loss function. To be honest I got a bit confused about whether we should take the summation into account, and if that's the case, how to solve the problem. If we only have to start with calculating the derivative of y * log y_hat without considering the summation and the denominator N, it would be rather easier. Otherwise, we are not sure about how to compute the derivative of a scalar over a vector, and how to deal with individual entry. Screenshot_2025-10-15_at_6.39.07_PM.png",
+    "answer": "Just the relationship between the layers. Piazza post @36 would help you.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_52"
+  },
+  {
+    "question": "Yeah then is it okay if I have only used one hyperparameter combination to train the RNN right? I am not sure if I can classify that as the best model but I got a good accuracy, but here's the thing we wont exactly know which our best model is unless we have explicitly tried different combination, cause idk that seems bit weird!",
+    "answer": "Yes, that's okay",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "followup",
+    "parent_question": "Confusion about parameters results in Part 3\nHi, What is the least number we need to record of results with different hyperparameters in Part 3 (a) and (b)? Additionally, what metrics of the RNN need to be documented in RNN result documented (10 pts) ? Thanks.",
+    "pair_id": "piazza_35"
+  },
+  {
+    "question": "Question regarding HW1\nDear Professor, The homework folder seems to be locked. Would you mind unlocking the homework? Best, Stephen Tan",
+    "answer": "Sorry for the inconvenience. We\u2019ve fixed the problem. Please let me know if it\u2019s still not visible.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_92"
+  },
+  {
+    "question": "Thanks! Maybe I did not express my question clearly. Because we need to use x to express aL/aW_1, I wonder whether we should use (x is an vector with D dimensions) or a N samples (X is a matrix with the shape NxD) when calculating.",
+    "answer": "Ah, sorry, I forgot to say this as well: Your computed derivatives should be a product of derivatives. Here is a hint, fill in the ... and question mark $$\\frac{\\mathrm{dL} }{\\mathrm{d} W_{1}} = \\frac{\\mathrm{dL} }{\\mathrm{d} ...}\\cdot ... \\cdot \\frac{\\mathrm{d?} }{\\mathrm{d} W_{1}}\\cdot$$ You don't need to explicitly compute the last derivative, which avoids including either x or X in your final answer. I apologize for the confusion. Feel free to follow up if you need further clarification.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "followup",
+    "parent_question": "Questions about 1 d) 1. (mathematical derivation)\nDo we need to add regularization for 1 d) 1. (mathematical derivation)? Because in the provided code, there is one line for regularization, I'm not sure whether we should count for it in the mathematical derivation. Are we expected to write derivations for one sample (x is an vector with D dimensions) or a N samples (X is a matrix with the shape NxD)?",
+    "pair_id": "piazza_76"
+  },
+  {
+    "question": "question about Relu\nWhen choose Relu as the activation function, the entire background of result is a single color. The network predicts the same class across the whole grid and has learned virtually no separable boundary. How to due with this problem? Thanks.",
+    "answer": "It looks like ReLU units are \u201cdying\u201d so the hidden layer outputs are mostly zeros, which makes the network predict a single class. Try He initialization for ReLU, set a small positive bias (e.g., 0.1), lower the learning rate, and reduce L2 weight decay.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_65"
+  },
+  {
+    "question": "What is two late days?",
+    "answer": "From the class website : Late Policy: 2 late days in total are allocated across all 3 assignments, after that 25% penalty per day Note that if you submit an assignment 0.01 days late, that counts as one whole late day.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "followup",
+    "parent_question": "Late Day Usage\nHi Instructors, We have two late days. Do we have to declare that we are using them? Or do we just turn the assignment in late?",
+    "pair_id": "piazza_59"
+  },
+  {
+    "question": "What do I need to do for assignment 2?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 2\n\n**Due: November 6, 2025, 11:59 PM via Canvas**\n\n---",
+    "metadata": {
+      "type": "assignment_requirements",
+      "assignment": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "When is assignment 2 due?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 2\n\n**Due: November 6, 2025, 11:59 PM via Canvas**\n\n---",
+    "metadata": {
+      "type": "assignment_due_date",
+      "assignment": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Report requirements for Q2c\nDo we also need to paste all the figures same as Q2 a and b for each configuration in Q2c? That would be a really large number of figures because I tried a lot of different configurations in Q2c. Edit: I just found that I can plot the lines with different configurations in one chart. Sorry for not noticing this before. Is this what expected in Q2c?",
+    "answer": "For Q2c, produce all the plots for only one combination of your choice (sorry, I didn't realize @48 was private but I have made that public now)",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_60"
+  },
+  {
+    "question": "Are there any restrictions for the final project? Can I undertake the project of LLM for extracting case information and completing RS?",
+    "answer": "Yes",
+    "source": "piazza",
+    "tags": [
+      "project",
+      "pin"
+    ],
+    "type": "followup",
+    "parent_question": "Final Project Presentation\nI noticed that the date of the final project presentation on the schedule is from December 10th to December 17th. Do we need to present it in class or just upload and submit it within this period of time?",
+    "pair_id": "piazza_3"
+  },
+  {
+    "question": "2.c\nFor part 2.C of the assignment, I want to confirm whether we are expected to run and report all combinations of activations, initializations, and optimizers, or if a representative subset is acceptable.",
+    "answer": "Yes, a subset is good. According to the rubric, you only need to train the network with at least one change, see below. Rubric for that question: Completion of running the network training with at least one other configuration [3 pts] (can include different nonlinearities (tanh, sigmoid, leaky-ReLU, MaxOut,...), initialization techniques (Xavier...) and training algorithms (SGD, Momentum-based Methods, Adagrad..)) Inclusion of resultant figures [3pts]",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_64"
+  },
+  {
+    "question": "How do I submit assignment 2?",
+    "answer": "## Submission Instructions\n\nSubmit your report as a **PDF** on Canvas.\n\nYou may choose:\n\n### **Option 1**\n- Submit all answers, screenshots, and figures in a single PDF report.\n- Submit all code and supporting files as a ZIP named:\n```\nnetid-assignment2.zip\n```\n\n### **Option 2**\n- Submit a **PDF export of your Jupyter Notebook** (must include all code + outputs).\n- Make sure to run all cells before exporting.\n\nTemporary files (e.g., TensorBoard logs) should NOT be included.\n\n---",
+    "metadata": {
+      "type": "assignment_submission",
+      "assignment": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "What is problem 1 in assignment 2?",
+    "answer": "# 1. Visualizing a CNN with CIFAR10\n\nTrain a CNN on CIFAR10 and visualize early-layer filters and activations.\n\n---\n\n## a) CIFAR10 Dataset\n\nCIFAR10 consists of **32\u00d732 color images** in 10 classes:\n\nairplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.\n\nTwo import options:\n\n### **Option A (Recommended): TorchVision**\n- Images are RGB  \n- Resolution: 32\u00d732  \n\n### **Option B**\n- Use `trainCifarStarterCode.py` and provided ZIP  \n- Images are **grayscale 28\u00d728**  \n- Requires preprocessing + one-hot labels  \n\n---\n\n## b) Train LeNet5 on CIFAR10\n\nImplement and train the following variant of **LeNet5**:\n\n- Conv (5\u00d75), 6 filters \u2192 tanh  \n- MaxPool (2\u00d72)  \n- Conv (5\u00d75), 16 filters \u2192 tanh  \n- MaxPool (2\u00d72)  \n- FC: 5\u00d75\u00d716 \u2192 120 \u2192 84 \u2192 10  \n- Softmax output  \n\n### Required outputs:\n- Training accuracy plot  \n- Testing accuracy plot  \n- Training loss plot  \n- Hyperparameter experiments (LR, momentum, optimizer, etc.)\n\n---\n\n## c) Visualize the Trained Network\n\n### 1. Visualize first-layer convolution filters  \nThey should resemble **Gabor filters** (edge detectors).\n\n### 2. Visualize activations on test images  \nInclude summary statistics for each convolutional layer.\n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "My I knwo where can we find the template? I did not find it in canvas.",
+    "answer": "On my end, the previous examples seemed to follow the IEEE format. Nevertheless, please use the IEEE template",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "followup",
+    "parent_question": "Proposal Title Page\nDoes a title page of our proposal count for the page length requirement of 1-4 pages?",
+    "pair_id": "piazza_16"
+  },
+  {
+    "question": "PDF documen\nI would like to confirm about the report format for this assignment. For the PDF report, do we only need to include the written answers and the results after running the code (such as screenshots, graphs, and outputs)? And should the actual code files be placed separately in a ZIP file instead of being included in the PDF?",
+    "answer": "From the instructions on the Canvas assignment (which doesn't match the assignment PDF itself ...): Option 1: Please submit your work for the following assignment as a PDF document, providing all answers, screenshots, and pictures required together in one document. Then include all relevant code and other files in a zip file (naming structure for this file defined in assignment instructions). Option 2: After converting your .ipynb file to a .pdf file, submit a PDF with both the code and output, i.e., code for Q1a followed by output for Q1a, etc. Make sure to run all the cells before submission. Don't forget to include textual answers to any written questions.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_71"
+  },
+  {
+    "question": "Explain the training a simple deep convolutional network on mnist problem in assignment 1",
+    "answer": "# 2. Training a Simple Deep Convolutional Network on MNIST\n\nStarter code provided on Canvas.  \nReview tutorial: **Getting Started with PyTorch**.\n\nMNIST:\n- 55,000 training  \n- 10,000 test  \n- 5,000 validation  \n- Each image is 28\u00d728  \n\n---\n\n## a) Build and Train a 4-Layer DCN\n\nArchitecture:\n\n```\nconv1(5\u00d75\u00d71\u219232) \u2192 ReLU \u2192 maxpool(2\u00d72)\nconv2(5\u00d75\u00d732\u219264) \u2192 ReLU \u2192 maxpool(2\u00d72)\nfc(1024) \u2192 ReLU \u2192 Dropout(0.5) \u2192 Softmax(10)\n```\n\nSteps:\n\n1. Read ConvNet tutorial  \n2. Load MNIST (use torchvision)  \n3. Complete class `Net()`  \n4. Complete training function `train()`  \n5. Use TensorBoard to visualize training loss  \n6. Report test accuracy  \n\nInclude TensorBoard plots.\n\n---\n\n## b) More Training Visualization\n\nAdd TensorBoard logging for each 100 iterations:\n\n- Weights  \n- Biases  \n- Net inputs  \n- ReLU activations  \n- Max-pool activations  \n\nAlso log after each epoch:\n\n- Validation error  \n- Test error  \n\nInclude figures.\n\n---\n\n## c) More Experiments\n\nTry different:\n\n- Activations:\n  - tanh, sigmoid, leaky-ReLU, MaxOut  \n- Initialization:\n  - Xavier  \n- Training algorithms:\n  - SGD  \n  - Momentum  \n  - Adagrad  \n\nInclude TensorBoard figures and descriptions.\n\n---\n\n# Collaboration Policy\n\nCollaboration allowed for ideas.  \nWrite-ups must be individual.\n\n---\n\n# Plagiarism Policy\n\nNo plagiarism allowed.  \nCite all sources.\n\n---\n\n# LLM Policy\n\n**LLMs (ChatGPT, Copilot, etc.) are *not permitted* for coding in Assignment 1.**  \nAll coding must be your own.",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "1",
+      "problem": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Regarding Q2 c\nI have made different combinations of activation functions, initialisation techniques and training algorithms, and have trained my model. For the report part I have generated scalars that show train loss, test accuracy and loss, and validation accuracy and loss. Will that meet the checklist requirement. I haven\u2019t generated histograms weights for each layers as it would have been too much. please let me know",
+    "answer": "No, please generate histogram weights for one particular combination, e.g., tanh, random initialization, and SGD. To help your fellow students, please consider making this post public.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_63"
+  },
+  {
+    "question": "So is it ok to write in hand, and paste the picture into the report?",
+    "answer": "Yes, that\u2019s perfectly fine",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "followup",
+    "parent_question": "Question sbout 1.b.2\nHi team, For the task 1.b.2 \u201cDerive the derivatives of Tanh, Sigmoid, and ReLU\u201d, do we need to include the mathematical derivations in the report, or is it sufficient to just complete the code implementation? (what's the difference with 1.b.3) Thanks!",
+    "pair_id": "piazza_80"
+  },
+  {
+    "question": "Visualization Problem 2 part B\nHi, I have a question on Assignment 1, problem 2, part B. This task generated so many plots, and I am not sure which one I need to put on my report. Which one do we attach to the report, the time series or scalars or distributions or histograms? Thank you! Best Regards,",
+    "answer": "Include training plots (values across time) for the following: Weights Biases Net input Activations after ReLU Activations after maxpool",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_85"
+  },
+  {
+    "question": "Are there any suggestions on the environment to use for the assignment?\nThe assignment 1's spec seem to didn't include any suggestion or request about the environmental setup. Are we allowed to set up the environment based on our need, or there's indeed an environmental requirement that I didn't notice?",
+    "answer": "No environmental requirement",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_55"
+  },
+  {
+    "question": "Slides\nHi, Where can we download the most updated slides? The slides from the course website is missing some contents. Thanks.",
+    "answer": "To get you started, the class website's schedule has links to the slides from the 2020 version of the course: https://elec576.rice.edu/schedule-and-syllabus/ . I'll ask the professors if they want to update the slides on the website I've followed up with the profs, will keep you updated (Kesha)",
+    "source": "piazza",
+    "tags": [
+      "logistics"
+    ],
+    "type": "main",
+    "pair_id": "piazza_88"
+  },
+  {
+    "question": "Do we need to create a validation set?\nIn the assignment PDF, it states: \"the MNIST data is split into three parts: 55,000 data points of training data (mnist.train), 10,000 points of test data (mnist.test), and 5,000 points of validation data (mnist.validation).\" And in Part 2(b), the requirement says: \"Also monitor the test and validation error after each 1100 iterations (equivalently, after each epoch).\" However, in the provided skeleton code , I only see: train_loader = [inset-code] test_loader = [inset-code] There is no val_loader or validate() function in the skeleton. When I looked up the PyTorch MNIST dataset online, I found that PyTorch's datasets.MNIST does not have a validation set. So, should we follow the skeleton code structure (only train and test) and ignore the requirement for monitoring the validation error, or should we manually split the PyTorch training set into 55,000 train + 5,000 validation to match the description in the PDF?",
+    "answer": "Sorry for the confusion, please follow the skeleton code structure (only train and test) In PyTorch, the MNIST dataset has a training set and a test set. For Part 2(b), please ignore any mention of a validation set and monitor accuracy/error on the test set. But you\u2019re welcome to split the training set into training and validation sets and report your findings on the validation set.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_69"
+  },
+  {
+    "question": "And sorry but one last question the comparison (RNN vs CNN) and (LSTM/GRU vs RNN) questions, both can be qualitative right?",
+    "answer": "Please see updated checklist",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "followup",
+    "parent_question": "Confusion about parameters results in Part 3\nHi, What is the least number we need to record of results with different hyperparameters in Part 3 (a) and (b)? Additionally, what metrics of the RNN need to be documented in RNN result documented (10 pts) ? Thanks.",
+    "pair_id": "piazza_37"
+  },
+  {
+    "question": "What is the due date for assignment 2?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 2\n\n**Due: November 6, 2025, 11:59 PM via Canvas**\n\n---",
+    "metadata": {
+      "type": "assignment_due_date",
+      "assignment": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "learning rate in part2\nCan we change lr in the assignment#2 part2?",
+    "answer": "By part 2, I assume you don't mean \"Q2: Visualizing and Understanding Convolutional Networks\"? For Part 1 (Visualizing a CNN with CIFAR10) and Part 3 (Build and Train an RNN on MNIST), learning rates are stated as a hyperparameter you should tune (i.e., Yes)",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_43"
+  },
+  {
+    "question": "A2 Pt. 1 Configuration Change?\nDid the numbers in the instruction configuration for A2 part 1 change? For example, it used to be that: Convolutional layer 1 had 32 filters and convolutional layer 2 had 64 filters. Now it's 6 and 16. Fully connected layer 1 had input 7*7*64, output 1024. Now it's 5*5*16 and 120. Should we still do a tanh after the first fully connected layer as in the starter code? (And, more generally, should we do it after each fully connected layer, of which there are now 3?)",
+    "answer": "Yes, you can continue the assignment with the previous setting. The updated structure is based on the original LeNet. The instructions only provided a reference for the network structure. You\u2019re encouraged to experiment with different settings\u2014such as the number of output channels, dropout layers, activation functions, learning rates, etc.",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_41"
+  },
+  {
+    "question": "What is problem 2 in assignment 2?",
+    "answer": "# 2. Visualizing and Understanding Convolutional Networks\n\nRead the paper:  \n**\"Visualizing and Understanding Convolutional Networks\" \u2014 Zeiler & Fergus**\n\n### Task:\n- Summarize the key ideas of the paper.\n\n### Optional:\nApply a visualization method (e.g., deconvolutional network) to the model trained in Problem 1.\n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Is this a Typo in Assignment 2?\nIt says the third fully connected layer has an input dimension of 120, while the output dimension of the second feed forward layer is 84. Shouldn't it be 84 in terms of the input dimension of the third fc?",
+    "answer": "It was a typo, I\u2019ve updated the instructions. Thanks for pointing it out.",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_44"
+  },
+  {
+    "question": "What is the due date for assignment 0?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 0  \n\n**Due: September 16, 2025, 11:59 p.m. via Canvas**\n\nThis assignment is to help you prepare for future assignments. You must submit your report as a **PDF file** on Rice Canvas.\n\n---\n\n## 1. Python Machine Learning Stack (Anaconda)\n\nYou will use Python in this course. To prepare for future assignments and the final project, install Python and its packages using **Anaconda**, a high-performance distribution of Python and R including 100+ popular packages.\n\nFollow the instructions: **Installing Anaconda**.\n\nConfirm installation using:\n\n```\nconda list\n```\n\nYou should see the list of installed packages.\n\nYou can also check using:\n\n```\npython\n```\n\nIf Anaconda is installed, the startup message will include **\u201cContinuum Analytics, Inc.\u201d**  \nExit with:\n\n```\nquit()\n```\n\nRead the **Conda Cheat Sheet** to learn basic `conda` commands.\n\n### Task 1  \nRun:\n\n```\nconda info\n```\n\nPaste the result into your report.\n\n---\n\n## 2. Interactive Terminal (IPython/Jupyter)\n\nIPython/Jupyter provides an interactive computational environment with code execution, text, math, plots, and media.\n\nFollow:\n\n- IPython Tutorial  \n- Jupyter Documentation  \n\nSee also: **Gallery of Jupyter Notebooks**\n\n---\n\n## 3. Transition from MATLAB to Python\n\nMATLAB is powerful, but Python offers better memory efficiency and speed for data science.\n\nRead: **NumPy for MATLAB Users**\n\nTo run Python on macOS/Linux:\n\n```\npython\n```\n\nWindows users: follow **Running Python in Windows**.\n\nBefore running the examples in the tutorial, import:\n\n```python\nimport numpy as np\nimport scipy.linalg\n```\n\n### Task 2  \nRun all Python commands in the **\u201cLinear Algebra Equivalents\u201d** table from the tutorial using IPython.  \nPaste results in your report using any matrix of your choice.\n\n*(Optional)*  \nComplete the Stanford NumPy Tutorial.\n\n---\n\n## 4. Plotting (Matplotlib/PyPlot)\n\nMatplotlib is the main Python plotting library. See the **Matplotlib Gallery**.\n\nPyplot provides MATLAB-style plotting functions. Read the **Pyplot Tutorial**.\n\n### Task 3  \nRun this script in IPython and paste the generated figure into your report:\n\n```python\nimport matplotlib.pyplot as plt\n\nplt.plot([1,2,3,4], [1,2,7,14])\nplt.axis([0, 6, 0, 20])\nplt.show()\n```\n\n### Task 4  \nUse Matplotlib to create a figure of your choice.  \nPaste the code and figure into your report.\n\n---\n\n## 5. Version Control System (GitHub)\n\nGit helps manage changes in collaborative projects.  \nRead: **Why VCS is necessary**\n\nRegister for a **GitHub Student Account** for free private repos and complete the GitHub tutorials.\n\n### Task 5  \nPaste your GitHub account (username/profile link) into your report.\n\n---\n\n## 6. Integrated Development Environment (IDE)\n\nRecommended Python IDEs: **PyCharm**, **Spyder**, **Google Colab**\n\nFor PyCharm:\n\n- Apply for a free student license  \n- Install PyCharm  \n- Follow PyCharm Tutorials (including VCS setup)  \n- See PyCharm debugging guide  \n\n### Task 6  \nStart a new project in your preferred IDE.  \nCommit and push it to GitHub as a **public project**.  \nPaste the project link into your report.\n\n---",
+    "metadata": {
+      "type": "assignment_due_date",
+      "assignment": "0",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Regarding zoom recording\nHi, Are the class recordings uploaded anywhere? Where can I get the recordings? Thank you.",
+    "answer": "Please consider making your post public so other students can benefit from it if they have the same question.",
+    "source": "piazza",
+    "tags": [
+      "logistics"
+    ],
+    "type": "main",
+    "pair_id": "piazza_94"
+  },
+  {
+    "question": "Cannot find Previous Proposal Examples\nHello! I remember seeing a folder with the previous project proposal examples on Canvas earlier in the semester, but I can\u2019t seem to find it now. Was it possibly removed? If not, could you please help me locate it? Thanks!",
+    "answer": "@112_f1",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_20"
+  },
+  {
+    "question": "size of image\nI'd like to confirm the image size requirements for Assignment 2. The instructions state that the CIFAR10 images should be 28\u00d728 grayscale images, but the original data is 32\u00d732. Should we scale the images to 28\u00d728, or keep the original 32\u00d732 for training the CNN?",
+    "answer": "If you import with torch dataset, the images are RGB, and the resolution is 32 x 32. If you import from the zip folder, the images are grayscale and of size 28 x 28. You will need to modify the network architecture according to your preferred method of importing the dataset.",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_45"
+  },
+  {
+    "question": "When is assignment 0 due?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 0  \n\n**Due: September 16, 2025, 11:59 p.m. via Canvas**\n\nThis assignment is to help you prepare for future assignments. You must submit your report as a **PDF file** on Rice Canvas.\n\n---\n\n## 1. Python Machine Learning Stack (Anaconda)\n\nYou will use Python in this course. To prepare for future assignments and the final project, install Python and its packages using **Anaconda**, a high-performance distribution of Python and R including 100+ popular packages.\n\nFollow the instructions: **Installing Anaconda**.\n\nConfirm installation using:\n\n```\nconda list\n```\n\nYou should see the list of installed packages.\n\nYou can also check using:\n\n```\npython\n```\n\nIf Anaconda is installed, the startup message will include **\u201cContinuum Analytics, Inc.\u201d**  \nExit with:\n\n```\nquit()\n```\n\nRead the **Conda Cheat Sheet** to learn basic `conda` commands.\n\n### Task 1  \nRun:\n\n```\nconda info\n```\n\nPaste the result into your report.\n\n---\n\n## 2. Interactive Terminal (IPython/Jupyter)\n\nIPython/Jupyter provides an interactive computational environment with code execution, text, math, plots, and media.\n\nFollow:\n\n- IPython Tutorial  \n- Jupyter Documentation  \n\nSee also: **Gallery of Jupyter Notebooks**\n\n---\n\n## 3. Transition from MATLAB to Python\n\nMATLAB is powerful, but Python offers better memory efficiency and speed for data science.\n\nRead: **NumPy for MATLAB Users**\n\nTo run Python on macOS/Linux:\n\n```\npython\n```\n\nWindows users: follow **Running Python in Windows**.\n\nBefore running the examples in the tutorial, import:\n\n```python\nimport numpy as np\nimport scipy.linalg\n```\n\n### Task 2  \nRun all Python commands in the **\u201cLinear Algebra Equivalents\u201d** table from the tutorial using IPython.  \nPaste results in your report using any matrix of your choice.\n\n*(Optional)*  \nComplete the Stanford NumPy Tutorial.\n\n---\n\n## 4. Plotting (Matplotlib/PyPlot)\n\nMatplotlib is the main Python plotting library. See the **Matplotlib Gallery**.\n\nPyplot provides MATLAB-style plotting functions. Read the **Pyplot Tutorial**.\n\n### Task 3  \nRun this script in IPython and paste the generated figure into your report:\n\n```python\nimport matplotlib.pyplot as plt\n\nplt.plot([1,2,3,4], [1,2,7,14])\nplt.axis([0, 6, 0, 20])\nplt.show()\n```\n\n### Task 4  \nUse Matplotlib to create a figure of your choice.  \nPaste the code and figure into your report.\n\n---\n\n## 5. Version Control System (GitHub)\n\nGit helps manage changes in collaborative projects.  \nRead: **Why VCS is necessary**\n\nRegister for a **GitHub Student Account** for free private repos and complete the GitHub tutorials.\n\n### Task 5  \nPaste your GitHub account (username/profile link) into your report.\n\n---\n\n## 6. Integrated Development Environment (IDE)\n\nRecommended Python IDEs: **PyCharm**, **Spyder**, **Google Colab**\n\nFor PyCharm:\n\n- Apply for a free student license  \n- Install PyCharm  \n- Follow PyCharm Tutorials (including VCS setup)  \n- See PyCharm debugging guide  \n\n### Task 6  \nStart a new project in your preferred IDE.  \nCommit and push it to GitHub as a **public project**.  \nPaste the project link into your report.\n\n---",
+    "metadata": {
+      "type": "assignment_due_date",
+      "assignment": "0",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Explain the visualizing and understanding convolutional networks problem in assignment 2",
+    "answer": "# 2. Visualizing and Understanding Convolutional Networks\n\nRead the paper:  \n**\"Visualizing and Understanding Convolutional Networks\" \u2014 Zeiler & Fergus**\n\n### Task:\n- Summarize the key ideas of the paper.\n\n### Optional:\nApply a visualization method (e.g., deconvolutional network) to the model trained in Problem 1.\n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Assignment 2 Release Date\nWhen will assignment 2 be released? On the course website it says that it should have been available on Wednesday, but it is still not on Canvas. Since we are given two weeks to complete our assignments, I would assume assignment 2 would be due two weeks after it is released on Canvas.",
+    "answer": "Sorry for the delay. HW2 should be available by tomorrow morning, and we will adjust the deadline accordingly",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_50"
+  },
+  {
+    "question": "What are the submission instructions for assignment 1?",
+    "answer": "## Submission Instructions\nSubmit your report as a **PDF** and your code as a ZIP file named:\n\n```\nnetid-assignment1.zip\n```\n\nUpload everything to Canvas.\n\n---",
+    "metadata": {
+      "type": "assignment_submission",
+      "assignment": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Are we allowed to search over the internet to solve problems in assignment 1 and future assignments?\nJust a general question, are we allowed to search over the internet to solve problems in assignment 1 and future assignments? If allowed I'll cite them academically.",
+    "answer": "Yes, feel free to search over the internet for tutorials or debugging. But if you used someone's code, please cite.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_82"
+  },
+  {
+    "question": "Can we submit JupyterBook in HW1\nHello, Because we need to write code and paste the results to the PDF report. Can we use JupyterBook ( ipynb ) directly and submit it as the report? Thanks.",
+    "answer": "After converting your .ipynb file to a .pdf file, submit a PDF with both the code and output, i.e., code for Q1a followed by output for Q1a, etc. Make sure to run all the cells before submission. Don't forget to include textual answers to any written questions. This is now included in the Canvas assignment instructions:",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_90"
+  },
+  {
+    "question": "What are the requirements for assignment 1?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 1\n\n**Due: Oct 7, 2025, 11:59 p.m. via Canvas**\n\n---",
+    "metadata": {
+      "type": "assignment_requirements",
+      "assignment": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "What are the requirements for assignment 2?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 2\n\n**Due: November 6, 2025, 11:59 PM via Canvas**\n\n---",
+    "metadata": {
+      "type": "assignment_requirements",
+      "assignment": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Can we compile all task results in a Jupyter Notebook for A0\nThere are many parts that require running code and copying and pasting the results. Could we instead put all the task results in a Jupyter Notebook, then either download the notebook as a PDF, or take screenshots of the results in the notebook and insert them into a Word document?",
+    "answer": "Yes you can export the notebook. Please make sure all answers are included in the notebook.",
+    "source": "piazza",
+    "tags": [
+      "assignment0"
+    ],
+    "type": "main",
+    "pair_id": "piazza_97"
+  },
+  {
+    "question": "What is the due date for assignment 1?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 1\n\n**Due: Oct 7, 2025, 11:59 p.m. via Canvas**\n\n---",
+    "metadata": {
+      "type": "assignment_due_date",
+      "assignment": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Visualization Problem 2 part B\nHi, I have a question on Assignment 1, problem 2, part B. This task generated so many plots, and I am not sure which one I need to put on my report. Which one do we attach to the report, the time series or scalars or distributions or histograms? Thank you! Best Regards,",
+    "answer": "Yes for @24_f1",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_86"
+  },
+  {
+    "question": "Assignment 1 deadline\nJust to confirm, the HW 1 is due to Oct 14 as stated in Canvas and not today oct7 as stated on the Course webpage?",
+    "answer": "It is due October 14. I've fixed the typo on the Assignments tab of the course page.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_84"
+  },
+  {
+    "question": "What do I need to implement for problem 1 in assignment 2?",
+    "answer": "# 1. Visualizing a CNN with CIFAR10\n\nTrain a CNN on CIFAR10 and visualize early-layer filters and activations.\n\n---\n\n## a) CIFAR10 Dataset\n\nCIFAR10 consists of **32\u00d732 color images** in 10 classes:\n\nairplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.\n\nTwo import options:\n\n### **Option A (Recommended): TorchVision**\n- Images are RGB  \n- Resolution: 32\u00d732  \n\n### **Option B**\n- Use `trainCifarStarterCode.py` and provided ZIP  \n- Images are **grayscale 28\u00d728**  \n- Requires preprocessing + one-hot labels  \n\n---\n\n## b) Train LeNet5 on CIFAR10\n\nImplement and train the following variant of **LeNet5**:\n\n- Conv (5\u00d75), 6 filters \u2192 tanh  \n- MaxPool (2\u00d72)  \n- Conv (5\u00d75), 16 filters \u2192 tanh  \n- MaxPool (2\u00d72)  \n- FC: 5\u00d75\u00d716 \u2192 120 \u2192 84 \u2192 10  \n- Softmax output  \n\n### Required outputs:\n- Training accuracy plot  \n- Testing accuracy plot  \n- Training loss plot  \n- Hyperparameter experiments (LR, momentum, optimizer, etc.)\n\n---\n\n## c) Visualize the Trained Network\n\n### 1. Visualize first-layer convolution filters  \nThey should resemble **Gabor filters** (edge detectors).\n\n### 2. Visualize activations on test images  \nInclude summary statistics for each convolutional layer.\n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Deadline of HW1\nHi, HW1 is not available up until today and it seems we only have one week and a half to finish it (Dr. Ankit Patel said in class we would have 2-3 weeks to finish it). I think it's very challenging for many students in this class to meet the deadline given the amount of work needs to be done in HW1. Would you possibly consider postponing the deadline for a week (or just for a few more days)? Thank you!",
+    "answer": "We have decided to give y'all an additional week for HW1",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_91"
+  },
+  {
+    "question": "Model&#39;s Accuracy on Final Project\nHi Instructors, We have questions about the model's accuracy for the final project. Is there a minimum accuracy that we need to achieve to get a good grade? Thank you! Best Regards,",
+    "answer": "You'll be assessed on the thoroughness and systematic nature of your project. We recognize that for some deep learning tasks, achieving exceptional performance is challenging without sufficient data and/or computational resources. I'd recommend showing that your project outperforms a naive approach/baseline. For example, if you had an EEG dataset of 100 patients with aphasia and 100 healthy controls, an 80% accurate diagnostic classifier is significantly better than naively predicting that everyone has aphasia (which would yield 50% accuracy). We wouldn't penalize a student for getting 80% accuracy instead of 90% accuracy. Another example is if you've built a CNN-based regressor that achieves an R-squared value of 0.7, you could demonstrate that it outperforms simpler regression methods, such as linear regression.",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_10"
+  },
+  {
+    "question": "Should we cite our assignment 1 of the course?\nSince part 1 and part 3 of this assignment share the similar structure as assignment 1 part 2, I utilized the data loading, training and testing structure of assignment 1 part 2 for assignment 2's parts 2 and 3. Do we need to cite our previously written assignment?",
+    "answer": "no, you don't need to",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_27"
+  },
+  {
+    "question": "Thanks! Maybe I did not express my question clearly. Because we need to use x to express aL/aW_1, I wonder whether we should use (x is an vector with D dimensions) or a N samples (X is a matrix with the shape NxD) when calculating.",
+    "answer": "Yes, the intermediate term should also be left in its symbolic form",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "followup",
+    "parent_question": "Questions about 1 d) 1. (mathematical derivation)\nDo we need to add regularization for 1 d) 1. (mathematical derivation)? Because in the provided code, there is one line for regularization, I'm not sure whether we should count for it in the mathematical derivation. Are we expected to write derivations for one sample (x is an vector with D dimensions) or a N samples (X is a matrix with the shape NxD)?",
+    "pair_id": "piazza_77"
+  },
+  {
+    "question": "Assignment 1 score\nIs the assignment 1 score publish?",
+    "answer": "Only 3 of 7 TAs have completed their HW1 grading so far, which means grades are not available yet for everyone. I'll follow up with the TAs who haven't completed their grading yet, apologies for the delay",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_49"
+  },
+  {
+    "question": "sum form or mean form\nso in 3 layer nn.py, i see in fit model func, we add regularization in sum form: dW2 += self.reg_lambda * self.W2 dW1 += self.reg_lambda * self.W1 does this mean in our backprop func, we should also use the sum form, which means delta don't need to be divided by number of samples? but then in loss func, i see the result is calculated using the mean form: return (1. / num_examples) * data_loss which look contradicting. So I'm a bit confused by this",
+    "answer": "Backprop works fine either way (sum vs mean). If you divide by num_examples, you're just averaging, and that gets scaled by the learning rate. If you don't, the learning rate absorbs the extra scale. What really matters is the direction of the gradient, not the exact magnitude. But for calculating loss, you need to average it to be more interpretable.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_83"
+  },
+  {
+    "question": "Can we plot all the hyperparameter combinations' results in one graph? For example, plot all hyperparameter combinations' training accuracy in one graph for comparison.",
+    "answer": "Sure!",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "followup",
+    "parent_question": "Hyperparameters in report\nHello, Do we need to report all hyperparameter combinations and their related results? Or just report one hyperparameter combination with higher than 55% accuracy? Thanks.",
+    "pair_id": "piazza_40"
+  },
+  {
+    "question": "Explain the build and train an rnn on mnist problem in assignment 2",
+    "answer": "# 3. Build and Train an RNN on MNIST\n\nUse the starter code `rnnMNISTStarterCode.py`.\n\nMNIST images are 28\u00d728; the RNN will process input **one row (28 pixels) at a time**.\n\n---\n\n## a) Set Up an RNN\n\nModify the following:\n\n- Hidden layer size  \n- Learning rate  \n- Training iterations  \n- Cost function (use softmax cross entropy with logits)  \n- Optimizer  \n\n---\n\n## b) Try LSTM or GRU\n\nExperiment using:\n\n- `torch.nn.GRU`\n- `torch.nn.LSTM`\n\n### Required outputs:\n- Train accuracy  \n- Test accuracy  \n- Train loss  \n\nTry varying hidden units and compare performance.\n\n---\n\n## c) Compare Against the CNN\n\nCompare results from:\n\n- This RNN  \n- The CNN you built in Assignment 1  \n\nDiscuss differences in:\n\n- Accuracy  \n- Training behavior  \n- Strengths/weaknesses  \n\n---\n\n# Collaboration Policy\n\nCollaboration is encouraged for discussing ideas, but all write-ups must be done **independently**.\n\n---\n\n# Plagiarism Policy\n\nPlagiarism is strictly prohibited.  \nCite all external sources explicitly.",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "3",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Clarification on Proposal Requirement 2.b.iii\nIn the rubric for the final project proposal, as well as for the project itself, there is a section for \"Is this problem not previously solved\". I would like some clarification on this requirement. How strictly original does our project have to be? Many of the example projects seem to be working on \"solved\" problems, such as the Rice Self-Driving Car paper which is explicitly trying to replicate the results of another paper using their own models, or the poster on artificially generated music, which also notes that it is not the first project to make music using deep learning. Would these examples meet the requirement for \"not previously solved\"?",
+    "answer": "Good question. It should be clear how your project advances previous work. What gap is your project filling? This doesn't have to be solving a problem that has never been solved. This can also look like solving a well-established problem in a novel way that surpasses previous work. In the music generation poster, it was stated that SOTA was a single LSTM; the researchers tried to advance previous work by hypothesizing that using GAN and Multi-Feature prediction would \"incorporate rhythm and harmony\" in music generation. I've changed the phrasing of this requirement to clarify this (I did not write the original document)",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_12"
+  },
+  {
+    "question": "What are the requirements for assignment 0?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 0  \n\n**Due: September 16, 2025, 11:59 p.m. via Canvas**\n\nThis assignment is to help you prepare for future assignments. You must submit your report as a **PDF file** on Rice Canvas.\n\n---\n\n## 1. Python Machine Learning Stack (Anaconda)\n\nYou will use Python in this course. To prepare for future assignments and the final project, install Python and its packages using **Anaconda**, a high-performance distribution of Python and R including 100+ popular packages.\n\nFollow the instructions: **Installing Anaconda**.\n\nConfirm installation using:\n\n```\nconda list\n```\n\nYou should see the list of installed packages.\n\nYou can also check using:\n\n```\npython\n```\n\nIf Anaconda is installed, the startup message will include **\u201cContinuum Analytics, Inc.\u201d**  \nExit with:\n\n```\nquit()\n```\n\nRead the **Conda Cheat Sheet** to learn basic `conda` commands.\n\n### Task 1  \nRun:\n\n```\nconda info\n```\n\nPaste the result into your report.\n\n---\n\n## 2. Interactive Terminal (IPython/Jupyter)\n\nIPython/Jupyter provides an interactive computational environment with code execution, text, math, plots, and media.\n\nFollow:\n\n- IPython Tutorial  \n- Jupyter Documentation  \n\nSee also: **Gallery of Jupyter Notebooks**\n\n---\n\n## 3. Transition from MATLAB to Python\n\nMATLAB is powerful, but Python offers better memory efficiency and speed for data science.\n\nRead: **NumPy for MATLAB Users**\n\nTo run Python on macOS/Linux:\n\n```\npython\n```\n\nWindows users: follow **Running Python in Windows**.\n\nBefore running the examples in the tutorial, import:\n\n```python\nimport numpy as np\nimport scipy.linalg\n```\n\n### Task 2  \nRun all Python commands in the **\u201cLinear Algebra Equivalents\u201d** table from the tutorial using IPython.  \nPaste results in your report using any matrix of your choice.\n\n*(Optional)*  \nComplete the Stanford NumPy Tutorial.\n\n---\n\n## 4. Plotting (Matplotlib/PyPlot)\n\nMatplotlib is the main Python plotting library. See the **Matplotlib Gallery**.\n\nPyplot provides MATLAB-style plotting functions. Read the **Pyplot Tutorial**.\n\n### Task 3  \nRun this script in IPython and paste the generated figure into your report:\n\n```python\nimport matplotlib.pyplot as plt\n\nplt.plot([1,2,3,4], [1,2,7,14])\nplt.axis([0, 6, 0, 20])\nplt.show()\n```\n\n### Task 4  \nUse Matplotlib to create a figure of your choice.  \nPaste the code and figure into your report.\n\n---\n\n## 5. Version Control System (GitHub)\n\nGit helps manage changes in collaborative projects.  \nRead: **Why VCS is necessary**\n\nRegister for a **GitHub Student Account** for free private repos and complete the GitHub tutorials.\n\n### Task 5  \nPaste your GitHub account (username/profile link) into your report.\n\n---\n\n## 6. Integrated Development Environment (IDE)\n\nRecommended Python IDEs: **PyCharm**, **Spyder**, **Google Colab**\n\nFor PyCharm:\n\n- Apply for a free student license  \n- Install PyCharm  \n- Follow PyCharm Tutorials (including VCS setup)  \n- See PyCharm debugging guide  \n\n### Task 6  \nStart a new project in your preferred IDE.  \nCommit and push it to GitHub as a **public project**.  \nPaste the project link into your report.\n\n---",
+    "metadata": {
+      "type": "assignment_requirements",
+      "assignment": "0",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Cant find example Proposals\nHello! I remember previously seeing some of the previous Proposal examples somewhere on canvas but I cant find them anymore. Where they taken off or if they are still there could you direct me towards where to find them? Thanks!",
+    "answer": "@112_f1",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_18"
+  },
+  {
+    "question": "Thanks. So for the Option 1 here, we don't need to contain any code in report, right? Do we need to zip the tensorboard result file as well?",
+    "answer": "Yes upload the tensorboard file as the 2nd file to avoid the TAs from dealing with a zip file",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "followup",
+    "parent_question": "PDF documen\nI would like to confirm about the report format for this assignment. For the PDF report, do we only need to include the written answers and the results after running the code (such as screenshots, graphs, and outputs)? And should the actual code files be placed separately in a ZIP file instead of being included in the PDF?",
+    "pair_id": "piazza_72"
+  },
+  {
+    "question": "2.b question\nI read the assignment#1 grading rubric, and I saw that the test and validation error after each 1100 iterations [4 pts] (equivalently, after each epoch). Do we need to do this? Because the response for @40 says that we don't have to do this.",
+    "answer": "You're correct, I removed the mention of validation from that section of the grading rubric",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_62"
+  },
+  {
+    "question": "Examples of Previous Poster Presentations\nHello! I was just wondering if there were any examples of previous Poster Presentations of this class. I am trying to get a better idea of what it should look like outside of just the grading rubric.",
+    "answer": "Page 3 of @109: Example Posters (Note: criteria from past semesters may have been slightly differ so poster sections may differ): https://drive.google.com/drive/folders/12Yjw4_qU4-wL0_72FOoqCOq3bjPsHdKc?usp=sharing",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_7"
+  },
+  {
+    "question": "Moreover in the document it explicitly asked us to compare different hidden units for only GRUs and LSTMs, is it okay of I have done only for these two..... coz anyways in RNN we only used one set of hyper parameters.",
+    "answer": "Sorry, that was a typo, thank you for catching. Only need to compare number of hidden units for LSTM and GRU",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "followup",
+    "parent_question": "Confusion about parameters results in Part 3\nHi, What is the least number we need to record of results with different hyperparameters in Part 3 (a) and (b)? Additionally, what metrics of the RNN need to be documented in RNN result documented (10 pts) ? Thanks.",
+    "pair_id": "piazza_36"
+  },
+  {
+    "question": "What are the submission instructions for assignment 2?",
+    "answer": "## Submission Instructions\n\nSubmit your report as a **PDF** on Canvas.\n\nYou may choose:\n\n### **Option 1**\n- Submit all answers, screenshots, and figures in a single PDF report.\n- Submit all code and supporting files as a ZIP named:\n```\nnetid-assignment2.zip\n```\n\n### **Option 2**\n- Submit a **PDF export of your Jupyter Notebook** (must include all code + outputs).\n- Make sure to run all cells before exporting.\n\nTemporary files (e.g., TensorBoard logs) should NOT be included.\n\n---",
+    "metadata": {
+      "type": "assignment_submission",
+      "assignment": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Question regarding question 1 part c\nWhat are the statistics that we should include about activation for question 1, part c?",
+    "answer": "For each convolution layer, produce a singular figure visualizing the activation mean and standard deviation for each filter (x axis = filter number, y axis is activation, each filter has its own barchart box plot ). Overall, you should have two figures, each with N barcharts boxplots , N = layer's number of filters @74_f4",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_47"
+  },
+  {
+    "question": "(In general, my question is, should we draw box plots of means and stds, or draw box plots of the original activitions? If it is the former one, how should we group the activitions to calculate means and stds?)",
+    "answer": "Please plot bar charts of the original activations, where the error bars indicate standard deviations. I'd explore the plt.bar() documentation https://towardsdatascience.com/error-bar-plots-from-a-data-frame-using-matplotlib-53026fe95491/ . Boxplots of the original activations will be accepted, as that is what I originally wrote, even though boxplots typically indicate quartiles and medians instead of means and standard deviations.",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "followup",
+    "parent_question": "Question regarding question 1 part c\nWhat are the statistics that we should include about activation for question 1, part c?",
+    "pair_id": "piazza_48"
+  },
+  {
+    "question": "Proposal Title Page\nDoes a title page of our proposal count for the page length requirement of 1-4 pages?",
+    "answer": "No, please use the template provided in the logistics document",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_14"
+  },
+  {
+    "question": "Clarification on the &#34;layer size&#34; for problem f in assignment 1 part 1\nFor question f in assignment 1 part 1, the spec claims that \"Your code must be able to accept as parameters (1) the number of layers and (2) layer size\". In this case, for our DeepNeuralNetwork, should we expect a parameter as a list of integers which are the size of each layer correspondingly?",
+    "answer": "Yes, a parameter should be a list of sizes for the layers in the network.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_51"
+  },
+  {
+    "question": "How do I solve the visualizing a cnn with cifar10 in assignment 2?",
+    "answer": "# 1. Visualizing a CNN with CIFAR10\n\nTrain a CNN on CIFAR10 and visualize early-layer filters and activations.\n\n---\n\n## a) CIFAR10 Dataset\n\nCIFAR10 consists of **32\u00d732 color images** in 10 classes:\n\nairplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.\n\nTwo import options:\n\n### **Option A (Recommended): TorchVision**\n- Images are RGB  \n- Resolution: 32\u00d732  \n\n### **Option B**\n- Use `trainCifarStarterCode.py` and provided ZIP  \n- Images are **grayscale 28\u00d728**  \n- Requires preprocessing + one-hot labels  \n\n---\n\n## b) Train LeNet5 on CIFAR10\n\nImplement and train the following variant of **LeNet5**:\n\n- Conv (5\u00d75), 6 filters \u2192 tanh  \n- MaxPool (2\u00d72)  \n- Conv (5\u00d75), 16 filters \u2192 tanh  \n- MaxPool (2\u00d72)  \n- FC: 5\u00d75\u00d716 \u2192 120 \u2192 84 \u2192 10  \n- Softmax output  \n\n### Required outputs:\n- Training accuracy plot  \n- Testing accuracy plot  \n- Training loss plot  \n- Hyperparameter experiments (LR, momentum, optimizer, etc.)\n\n---\n\n## c) Visualize the Trained Network\n\n### 1. Visualize first-layer convolution filters  \nThey should resemble **Gabor filters** (edge detectors).\n\n### 2. Visualize activations on test images  \nInclude summary statistics for each convolutional layer.\n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "My I knwo where can we find the template? I did not find it in canvas.",
+    "answer": "Sorry, I forgot to include @109 in my response",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "followup",
+    "parent_question": "Proposal Title Page\nDoes a title page of our proposal count for the page length requirement of 1-4 pages?",
+    "pair_id": "piazza_15"
+  },
+  {
+    "question": "What do I need to do for assignment 1?",
+    "answer": "# ELEC 576 / COMP 576 \u2013 Fall 2025  \n## Assignment 1\n\n**Due: Oct 7, 2025, 11:59 p.m. via Canvas**\n\n---",
+    "metadata": {
+      "type": "assignment_requirements",
+      "assignment": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Explain the visualizing a cnn with cifar10 problem in assignment 2",
+    "answer": "# 1. Visualizing a CNN with CIFAR10\n\nTrain a CNN on CIFAR10 and visualize early-layer filters and activations.\n\n---\n\n## a) CIFAR10 Dataset\n\nCIFAR10 consists of **32\u00d732 color images** in 10 classes:\n\nairplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.\n\nTwo import options:\n\n### **Option A (Recommended): TorchVision**\n- Images are RGB  \n- Resolution: 32\u00d732  \n\n### **Option B**\n- Use `trainCifarStarterCode.py` and provided ZIP  \n- Images are **grayscale 28\u00d728**  \n- Requires preprocessing + one-hot labels  \n\n---\n\n## b) Train LeNet5 on CIFAR10\n\nImplement and train the following variant of **LeNet5**:\n\n- Conv (5\u00d75), 6 filters \u2192 tanh  \n- MaxPool (2\u00d72)  \n- Conv (5\u00d75), 16 filters \u2192 tanh  \n- MaxPool (2\u00d72)  \n- FC: 5\u00d75\u00d716 \u2192 120 \u2192 84 \u2192 10  \n- Softmax output  \n\n### Required outputs:\n- Training accuracy plot  \n- Testing accuracy plot  \n- Training loss plot  \n- Hyperparameter experiments (LR, momentum, optimizer, etc.)\n\n---\n\n## c) Visualize the Trained Network\n\n### 1. Visualize first-layer convolution filters  \nThey should resemble **Gabor filters** (edge detectors).\n\n### 2. Visualize activations on test images  \nInclude summary statistics for each convolutional layer.\n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Final Project Model choice\nFor final project, can we finetune existing models or we have to come up with our own models? Thanks",
+    "answer": "Both are acceptable :)",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_22"
+  },
+  {
+    "question": "What do I need to implement for problem 2 in assignment 2?",
+    "answer": "# 2. Visualizing and Understanding Convolutional Networks\n\nRead the paper:  \n**\"Visualizing and Understanding Convolutional Networks\" \u2014 Zeiler & Fergus**\n\n### Task:\n- Summarize the key ideas of the paper.\n\n### Optional:\nApply a visualization method (e.g., deconvolutional network) to the model trained in Problem 1.\n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "one-hot\nIf I use CrossEntropyLoss, do I still need to use one-hot?",
+    "answer": "Yes, use cross entropy (CE) with one-hot encoding. To give you an example, let's say the ground truth label is '2'. After one hot encoding, the ground truth label then becomes # corresponding label '0' '1' '2' '3' '9' one_hot = [0, 0, 1, 0, ..., 0] Let's say after softmax, your model prediction is [0.2, 0.4, ...]. Simply run CE between the prediction and one-hot encoded ground truth to obtain CE loss. To Anonymous Atom -- I realized the explanation that I gave during my office hour is a bit confusing, use the answer above instead.",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_46"
+  },
+  {
+    "question": "Late Day Usage\nHi Instructors, We have two late days. Do we have to declare that we are using them? Or do we just turn the assignment in late?",
+    "answer": "You don't need to declare. Canvas conveniently tells the instruction staff how late your assignment is.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_58"
+  },
+  {
+    "question": "What are the requirements for problem 2 in assignment 1?",
+    "answer": "# 2. Training a Simple Deep Convolutional Network on MNIST\n\nStarter code provided on Canvas.  \nReview tutorial: **Getting Started with PyTorch**.\n\nMNIST:\n- 55,000 training  \n- 10,000 test  \n- 5,000 validation  \n- Each image is 28\u00d728  \n\n---\n\n## a) Build and Train a 4-Layer DCN\n\nArchitecture:\n\n```\nconv1(5\u00d75\u00d71\u219232) \u2192 ReLU \u2192 maxpool(2\u00d72)\nconv2(5\u00d75\u00d732\u219264) \u2192 ReLU \u2192 maxpool(2\u00d72)\nfc(1024) \u2192 ReLU \u2192 Dropout(0.5) \u2192 Softmax(10)\n```\n\nSteps:\n\n1. Read ConvNet tutorial  \n2. Load MNIST (use torchvision)  \n3. Complete class `Net()`  \n4. Complete training function `train()`  \n5. Use TensorBoard to visualize training loss  \n6. Report test accuracy  \n\nInclude TensorBoard plots.\n\n---\n\n## b) More Training Visualization\n\nAdd TensorBoard logging for each 100 iterations:\n\n- Weights  \n- Biases  \n- Net inputs  \n- ReLU activations  \n- Max-pool activations  \n\nAlso log after each epoch:\n\n- Validation error  \n- Test error  \n\nInclude figures.\n\n---\n\n## c) More Experiments\n\nTry different:\n\n- Activations:\n  - tanh, sigmoid, leaky-ReLU, MaxOut  \n- Initialization:\n  - Xavier  \n- Training algorithms:\n  - SGD  \n  - Momentum  \n  - Adagrad  \n\nInclude TensorBoard figures and descriptions.\n\n---\n\n# Collaboration Policy\n\nCollaboration allowed for ideas.  \nWrite-ups must be individual.\n\n---\n\n# Plagiarism Policy\n\nNo plagiarism allowed.  \nCite all sources.\n\n---\n\n# LLM Policy\n\n**LLMs (ChatGPT, Copilot, etc.) are *not permitted* for coding in Assignment 1.**  \nAll coding must be your own.",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "1",
+      "problem": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Final Project Model choice\nFor final project, can we finetune existing models or we have to come up with our own models? Thanks",
+    "answer": "@107_f1",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_23"
+  },
+  {
+    "question": "Explain the backpropagation in a simple neural network problem in assignment 1",
+    "answer": "# 1. Backpropagation in a Simple Neural Network\n\nYou will implement backpropagation for a 3-layer neural network. Starter code is provided in  \n`three_layer_neural_network.py`.\n\n---\n\n## a) Dataset \u2014 Make Moons\n\nUncomment the dataset generation section:\n\n```python\n# generate and visualize Make-Moons dataset\nX, y = generate_data()\nplt.scatter(X[:, 0], X[:, 1], s=40, c=y, cmap=plt.cm.Spectral)\n```\n\nRun it and include the figure in your report.\n\n---\n\n## b) Activation Functions\n\nImplement:\n\n### 1. `actFun(self, z, type)`\nWhere `type \u2208 {'Tanh', 'Sigmoid', 'ReLU'}`.\n\n### 2. Derive derivatives of:\n- Tanh  \n- Sigmoid  \n- ReLU  \n\n### 3. Implement:\n`diff_actFun(self, z, type)`  \nCompute derivatives for all three activations.\n\n---\n\n## c) Build the 3-Layer Network\n\nNetwork structure:\n\n- Input: 2 nodes  \n- Hidden layer: variable size  \n- Output: 2 nodes (probabilities for 2 classes)\n\nEquations:\n\n```\nz1 = W1x + b1\na1 = actFun(z1)\nz2 = W2a1 + b2\na2 = \u0177 = softmax(z2)\n```\n\nLoss function (cross entropy):\n\n```\nL = -(1/N) \u03a3_n \u03a3_i y_n,i log(\u0177_n,i)\n```\n\n### Implement:\n\n1. `feedforward(self, X, actFun)`  \n   Computes probabilities.\n\n2. `calculate_loss(self, X, y)`  \n   Computes cross-entropy loss.\n\n---\n\n## d) Backpropagation\n\n### 1. Derive gradients:\n- \u2202L/\u2202W2  \n- \u2202L/\u2202b2  \n- \u2202L/\u2202W1  \n- \u2202L/\u2202b1  \n\n### 2. Implement in code:\n`backprop(self, X, y)`\n\n---\n\n## e) Training\n\nTraining code is already provided.\n\n### 1. Train using activation functions:\n- Tanh  \n- Sigmoid  \n- ReLU  \n\nInclude figures and describe differences.\n\nRemove dataset visualization (as instructed).\n\n### 2. Vary hidden layer size  \nTrain again (use Tanh). Describe the effect on accuracy and decision boundary.\n\n---\n\n## f) Build a Deeper Network (n-layer)\n\nWrite a new file `n_layer_neural_network.py`.\n\nYour implementation must support:\n\n- Arbitrary number of layers  \n- Arbitrary layer sizes  \n\n### Suggested structure (optional):\n\n1. Create class: `DeepNeuralNetwork(NeuralNetwork)`  \n2. Override:\n   - feedforward  \n   - backprop  \n   - calculate_loss  \n   - fit_model  \n3. Create a `Layer()` class  \n4. Use it to build feedforward/backprop modularly  \n5. Include L2 regularization in:\n   - Loss  \n   - Gradients  \n\n### Experiments:\n\n- Vary:\n  - Number of layers  \n  - Hidden sizes  \n  - Activation functions  \n  - Regularization  \n\nInclude:\n- Decision boundary plots  \n- Interesting observations  \n\n### Train on a second dataset  \nPick any Scikit-learn dataset or another dataset you like.  \nDescribe:\n- Dataset  \n- Network configuration  \n- Observations  \n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "1",
+      "problem": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "How do I submit assignment 0?",
+    "answer": "## Submission Instructions\n\nSubmit a **PDF** containing intermediate and final results plus any necessary code on Canvas.\n\n---",
+    "metadata": {
+      "type": "assignment_submission",
+      "assignment": "0",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Final Project Presentation\nI noticed that the date of the final project presentation on the schedule is from December 10th to December 17th. Do we need to present it in class or just upload and submit it within this period of time?",
+    "answer": "Sorry for the late response. On December 10, we will have a virtual poster conference on the platform Gathertown. Please plan to be in a location with good internet. After you/your group fills in a survey with the times you're available on December 10, you/your group will be given a ten-minute time slot where a TA will listen to your presentation. More info will be released later! EDIT: For more info, please see the Canvas assignment named Final Project Proposal",
+    "source": "piazza",
+    "tags": [
+      "project",
+      "pin"
+    ],
+    "type": "main",
+    "pair_id": "piazza_1"
+  },
+  {
+    "question": "How do I submit assignment 1?",
+    "answer": "## Submission Instructions\nSubmit your report as a **PDF** and your code as a ZIP file named:\n\n```\nnetid-assignment1.zip\n```\n\nUpload everything to Canvas.\n\n---",
+    "metadata": {
+      "type": "assignment_submission",
+      "assignment": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Is it allowed to do transfer learning with pre-trained model and add additional layers to the pre-trained model?",
+    "answer": "Yes",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "followup",
+    "pair_id": "piazza_109"
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "subject": "Presentation logistics (cross-posted on Canvas)",
+    "content": "1. Poster Time Slots & Rescheduling Please view your assigned poster time slot in this spreadsheet If the time does not work , please leave a comment on your team's row indicating your availability (Possible times: Wed/Thurs, 12:00 PM – 5:00 PM ). If your team does not have a row: Post your availability on Piazza immediately. 2. Presentation Details Presentations will primarily take place on the virtual Gathertown platform. Unfortunately, Gathertown does not have enough tables for each project. The spreadsheet above indicates whether your presentation will take place on Gathertown or Zoom. 3. If you're presenting on Zoom Join my office hour Zoom link. Join the breakout room named after the TA grading your poster. 4. If you're presenting on Gathertown Please verify you have received the Gathertown email granting you edit access for poster uploading. If you did NOT receive it, please leave a comment on your team's row in the spreadsheet. When uploading your poster in gathertown, use this link . Here are the instructions for accessing and uploading your poster to Gathertown. By default, each table's poster is from last year; please replace it with your updated poster. During your presentation itself, use this link. Unfortunately, only a maximum of 25 students can use this link at a time from Tuesday to Thursday ( the link won't work before Monday ). Thus, we kindly request that you leave the Gathertown environment once your presentation is complete . Based on last year, I believe this limit will be sufficient (if not, we will purchase more) If you happen to require a password, use DeepLearn 5. General Reminders Deadline: Submit your final poster to Canvas (and Gathertown if applicable) by Tuesday 5:00 p.m. Please re-read the project logistics document in general Proposal Feedback & Grades: Team captains, all proposals should be graded by now. Please verify you have received your feedback/grade on Canvas and ensure it has been disseminated to all team members. If you are missing a grade, please make a post on Piazza immediately.",
+    "created": "2025-12-08T00:17:48Z",
+    "tags": [
+      "instructor-note",
+      "pin",
+      "project"
+    ]
+  },
+  {
+    "subject": "Max project team size is 5, moving OH for this week (cross-posted on Canvas)",
+    "content": "Hi everyone, please note that the maximum project team size is 5 people. I changed this on Piazza a week ago, but I forgot to announce this more formally. Also, as I'm not feeling well, my office hour will take place tomorrow (Wednesday) 10-11 am, same Zoom link. This change is only for this week",
+    "created": "2025-11-11T12:48:20Z",
+    "tags": [
+      "instructor-note",
+      "logistics",
+      "pin",
+      "project"
+    ]
+  },
+  {
+    "subject": "Project logistics, proposal due Nov 18 (cross-posted on Canvas)",
+    "content": "Now that HW2 is behind us, it is time to think about your final project proposal due next Tuesday (November 18). Please see the Canvas Assignment named Final Project Proposal. We will provide feedback by Nov 24, which is when the Poster Availability Form will open. For the final project beyond the proposal, please refer to the following rubric and timeline: https://docs.google.com/document/d/1aKTF0AukOG933Dx19-r3Onf2joci_dBqoAUnwnYbq-I/edit?usp=sharinLinks to an external site. . Please also see the Canvas assignments titled \"Final Project Poster\" and \"Final Project Writeup.\"",
+    "created": "2025-11-11T20:35:06Z",
+    "tags": [
+      "instructor-note",
+      "logistics",
+      "pin",
+      "project"
+    ]
+  },
+  {
+    "subject": "Free Colab Pro subscriptions",
+    "content": "A couple of students asked me how to get the Colab Pro plan (for faster GPU run-times) -- here it is: These free subscriptions are available to anyone who can verify their identity as a faculty member or student at a U.S.-based higher education institution. See our FAQ for more. Simply visit our sign up page (look for the “No cost to students and educators” button) to begin the verification process and claim your free Colab Pro subscription. -Yuhao",
+    "created": "2025-10-15T03:14:26Z",
+    "tags": [
+      "instructor-note",
+      "logistics",
+      "pin"
+    ]
+  },
+  {
+    "subject": "Search for Project Teammates!",
+    "content": "Hi everyone, I hope post @5 can help you find teammates for your project. Teams can have 1-5 members. It may be helpful to post the following: interests skills/strengths you would bring to the team (coding, organizational, time management skills, etc) requests for certain skills your team is looking for (looking for someone with Python experience, etc). scheduling information (i.e., I can meet during evenings, except on Wednesdays). #pin",
+    "created": "2025-10-31T03:07:52Z",
+    "tags": [
+      "instructor-note",
+      "pin",
+      "project"
+    ]
+  },
+  {
+    "subject": "Search for Teammates!",
+    "content": "PA.load(\"/dashboard/project_partners\", null, function(data){ $('#' + 'questionText').html(data);}); #pin",
+    "created": "2025-09-03T13:52:54Z",
+    "tags": [
+      "pin"
+    ]
+  },
+  {
+    "subject": "FAQ for HW2 (cross-posted on Canvas)",
+    "content": "Credit to Zishen :) Here are some common questions and answers for HW2. Hope this would be helpful. Reminder : The submission deadline for HW2 is Nov 6, 11:59 PM. Q1: How do I import the CIFAR10 dataset? Do I need to use the provided zip folder? Answer: As stated in the HW2 instructions, there are two ways to import CIFAR-10: • If you import it using the Torch dataset, the images are RGB with a resolution of 32×32. • If you import it from the provided zip folder, the images are grayscale with a resolution of 28×28. You’ll need to adjust your network architecture according to the chosen method. Q2: The output size of my neural network layers doesn’t match the instructions. Answer: The instructions only provided a reference for the network structure. The actual layer sizes will depend on the input image dimensions, your choice of padding, pooling, and stride. Q3: Can I modify the network architecture? Can I modify the code skeleton? Answer: Yes, you’re encouraged to experiment with different settings—such as the number of output channels, dropout layers, activation functions, learning rates, etc. Q4: What’s the late submission policy? Answer: As stated on the class website: • You have 2 late days total across all 3 assignments, after that, a 25% penalty per day applies. • If you submit an assignment 0.01 days late, that counts as one whole late day. Q5: My PDF file is very long with output images. Answer: We highly encourage you to use plt.subplots to arange the images. Please make sure to include titles and necessary descriptions. Q6: What's the LLM policy? Answer: No LLMs allowed @88",
+    "created": "2025-11-04T22:37:57Z",
+    "tags": [
+      "assignment2",
+      "instructor-note",
+      "pin"
+    ]
+  },
+  {
+    "subject": "HW2 checklist",
+    "content": "Here is the link to the HW2 checklist: https://docs.google.com/document/d/14DuAQtDk5cytMTzvdqUYfC1r8_77ThuGKWbPuDC2qr0/edit?usp=sharing",
+    "created": "2025-10-27T06:49:07Z",
+    "tags": [
+      "assignment2",
+      "instructor-note",
+      "pin"
+    ]
+  },
+  {
+    "subject": "Looking for teammates: Scientific Image Forgery Detection",
+    "content": "Hello everyone, My name is Shichen, I am a first year MCS student looking for team members for the final project. I am interested in this Kaggle competition: https://www.kaggle.com/competitions/recodai-luc-scientific-image-forgery-detection/overview where we need train a model to find copy-move incidents in scientific images. CNN + Attention looks like a compelling idea to me, but I can't work this out alone. Please join my team so we can work together on this! About me : I have a solid background (PhD degree) in math, and about 4 years of python coding experiences. I am interested in learning new ideas and building new things. What I can bring to the team : Provide the general idea and generate a demo repository, assign specific tasks to team members, manage progress and schedule meeting. What I am looking for : Anyone who is interested in this project and willing to spend time on it. I am pretty flexible with many things. As long as you want to work hard on it, I am sure there is a way to collaborate. Just talk to me! Scheduling : Flexible. If you are interested or just want to learn more, feel free to reply to this post or send me an email at Shichen.Tang@rice.edu",
+    "created": "2025-10-23T21:42:50Z",
+    "tags": [
+      "project"
+    ]
+  },
+  {
+    "subject": "HW1 checklist",
+    "content": "To make sure you don't accidentally forget to include something for this homework, please refer to this checklist: https://docs.google.com/document/d/18BJRqHrrlT6xlL-6LRpRzbdWegvL2fYLeIG1AG40cIQ/edit?usp=sharing . Based on my experience last year, most students forgot to include some things for Q2b (which has been addressed a while ago on @24)",
+    "created": "2025-10-14T17:19:28Z",
+    "tags": [
+      "assignment1",
+      "instructor-note"
+    ]
+  },
+  {
+    "subject": "Oct 7 Tuesday OH 8:30-9:30",
+    "content": "Due to a medical appointment, my office hours next week (Oct 7) will be 8:30-9:30 am. If you can't make it, please ask questions via Piazza.",
+    "created": "2025-10-01T17:58:50Z",
+    "tags": [
+      "instructor-note",
+      "logistics"
+    ]
+  },
+  {
+    "subject": "Tuesday OH 10-11",
+    "content": "Due to a medical apppointment, my office hour tommorow is 10-11am, instead of the normal 10:30-11:30. If you can't make it, feel free to ask questions on Piazza!",
+    "created": "2025-09-29T15:01:28Z",
+    "tags": [
+      "instructor-note",
+      "logistics"
+    ]
+  },
+  {
+    "subject": "Welcome to Piazza!",
+    "content": "Piazza is a Q&A platform designed to get you great answers from classmates and instructors fast. We've put together this list of tips you might find handy as you get started: Ask questions! The best way to get answers is to ask questions! Ask questions on Piazza rather than emailing your teaching staff so everyone can benefit from the response (and so you can get answers from classmates who are up as late as you are). Edit questions and answers wiki-style. Think of Piazza as a Q&A wiki for your class. Every question has just a single students' answer that students can edit collectively (and a single instructors’ answer for instructors). Add a followup to comment or ask further questions. To comment on or ask further questions about a post, start a followup discussion . Mark it resolved when the issue has been addressed, and add any relevant information back into the Q&A above. Go anonymous. Shy? No problem. You can always opt to post or edit anonymously. Tag your posts. It's far more convenient to find all posts about your Homework 3 or Midterm 1 when the posts are tagged. Type a “#” before a key word to tag. Click a blue tag in a post or the question feed to filter for all posts that share that tag. Format code and equations. Adding a code snippet? Click the pre or tt button in the question editor to add pre-formatted or inline teletype text. Mathematical equation? Click the Fx button to access the LaTeX editor to build a nicely formatted equation. View and download class details and resources. Click the Course Page button in your top bar to access the class syllabus, staff contact information, office hours details, and course resources—all in one place! Contact the Piazza Team anytime with questions or comments at team@piazza.com . We love feedback!",
+    "created": "2025-09-03T13:52:53Z",
+    "tags": []
+  }
+]

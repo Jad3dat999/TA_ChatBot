@@ -1,0 +1,148 @@
+[
+  {
+    "question": "what parameters do I need to change? optimizer and all right?",
+    "answer": "Ideas for your 3 hyperparameter combinations: \"You should modify the following parameters in the starter code. \u2022 Number of nodes in the hidden layer \u2022 Learning rate \u2022 Number of iterations \u2022 Cost (hint: use softmax cross entropy with logits) \u2022 Optimizer\"",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "followup",
+    "parent_question": "Confusion about parameters results in Part 3\nHi, What is the least number we need to record of results with different hyperparameters in Part 3 (a) and (b)? Additionally, what metrics of the RNN need to be documented in RNN result documented (10 pts) ? Thanks.",
+    "pair_id": "piazza_32"
+  },
+  {
+    "question": "Thanks for your clarification. What is the number of hidden units we need to try in Part 3 (b)? In the PDF, it states, \"Also, change the number of hidden units and see how that a\ufb00ects the loss and accuracy.\"",
+    "answer": "It refers to the variable hidden_size in the provided starter code",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "followup",
+    "parent_question": "Confusion about parameters results in Part 3\nHi, What is the least number we need to record of results with different hyperparameters in Part 3 (a) and (b)? Additionally, what metrics of the RNN need to be documented in RNN result documented (10 pts) ? Thanks.",
+    "pair_id": "piazza_30"
+  },
+  {
+    "question": "Are we allowed to use AI to translate the proposal content and then cite the AI we used\nDear instructors, Our team has a question about AI usage for the project proposal. One member would like to draft part of the proposal in another language and then translate it into English using an AI tool for convenience. Would this be permitted if we clearly cite the AI tool and the corresponding chat? If not, we are happy to do the translation ourselves. Thank you for your time and guidance!",
+    "answer": "Yes, you can use AI for translation",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_13"
+  },
+  {
+    "question": "Will there be a Q&A session after the presentation?",
+    "answer": "From the google doc in @109, \"Duration of poster presentations will be 5 min for presenting, 5 minutes for questions\"",
+    "source": "piazza",
+    "tags": [
+      "other",
+      "pin"
+    ],
+    "type": "followup",
+    "parent_question": "Final Project Presentation\nI noticed that the date of the final project presentation on the schedule is from December 10th to December 17th. Do we need to present it in class or just upload and submit it within this period of time?",
+    "pair_id": "piazza_4"
+  },
+  {
+    "question": "Issue with Gathertown Access\nEveryone in our group don't have access to the Gathertown links, both for editing and for presentation, as demonstrated in the attached screenshots. We've also not received the email for Gathertown links either. Could you please look into this issue and grant the access fo r our group? Many thanks!",
+    "answer": "The presentation link won't work until Monday due to costs @141. Only the team captain will be given access to edit the room i.e. upload the poster. I've added yg108@rice.edu . Please let me know if it works now",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_6"
+  },
+  {
+    "question": "How do I solve the backpropagation in a simple neural network in assignment 1?",
+    "answer": "# 1. Backpropagation in a Simple Neural Network\n\nYou will implement backpropagation for a 3-layer neural network. Starter code is provided in  \n`three_layer_neural_network.py`.\n\n---\n\n## a) Dataset \u2014 Make Moons\n\nUncomment the dataset generation section:\n\n```python\n# generate and visualize Make-Moons dataset\nX, y = generate_data()\nplt.scatter(X[:, 0], X[:, 1], s=40, c=y, cmap=plt.cm.Spectral)\n```\n\nRun it and include the figure in your report.\n\n---\n\n## b) Activation Functions\n\nImplement:\n\n### 1. `actFun(self, z, type)`\nWhere `type \u2208 {'Tanh', 'Sigmoid', 'ReLU'}`.\n\n### 2. Derive derivatives of:\n- Tanh  \n- Sigmoid  \n- ReLU  \n\n### 3. Implement:\n`diff_actFun(self, z, type)`  \nCompute derivatives for all three activations.\n\n---\n\n## c) Build the 3-Layer Network\n\nNetwork structure:\n\n- Input: 2 nodes  \n- Hidden layer: variable size  \n- Output: 2 nodes (probabilities for 2 classes)\n\nEquations:\n\n```\nz1 = W1x + b1\na1 = actFun(z1)\nz2 = W2a1 + b2\na2 = \u0177 = softmax(z2)\n```\n\nLoss function (cross entropy):\n\n```\nL = -(1/N) \u03a3_n \u03a3_i y_n,i log(\u0177_n,i)\n```\n\n### Implement:\n\n1. `feedforward(self, X, actFun)`  \n   Computes probabilities.\n\n2. `calculate_loss(self, X, y)`  \n   Computes cross-entropy loss.\n\n---\n\n## d) Backpropagation\n\n### 1. Derive gradients:\n- \u2202L/\u2202W2  \n- \u2202L/\u2202b2  \n- \u2202L/\u2202W1  \n- \u2202L/\u2202b1  \n\n### 2. Implement in code:\n`backprop(self, X, y)`\n\n---\n\n## e) Training\n\nTraining code is already provided.\n\n### 1. Train using activation functions:\n- Tanh  \n- Sigmoid  \n- ReLU  \n\nInclude figures and describe differences.\n\nRemove dataset visualization (as instructed).\n\n### 2. Vary hidden layer size  \nTrain again (use Tanh). Describe the effect on accuracy and decision boundary.\n\n---\n\n## f) Build a Deeper Network (n-layer)\n\nWrite a new file `n_layer_neural_network.py`.\n\nYour implementation must support:\n\n- Arbitrary number of layers  \n- Arbitrary layer sizes  \n\n### Suggested structure (optional):\n\n1. Create class: `DeepNeuralNetwork(NeuralNetwork)`  \n2. Override:\n   - feedforward  \n   - backprop  \n   - calculate_loss  \n   - fit_model  \n3. Create a `Layer()` class  \n4. Use it to build feedforward/backprop modularly  \n5. Include L2 regularization in:\n   - Loss  \n   - Gradients  \n\n### Experiments:\n\n- Vary:\n  - Number of layers  \n  - Hidden sizes  \n  - Activation functions  \n  - Regularization  \n\nInclude:\n- Decision boundary plots  \n- Interesting observations  \n\n### Train on a second dataset  \nPick any Scikit-learn dataset or another dataset you like.  \nDescribe:\n- Dataset  \n- Network configuration  \n- Observations  \n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "1",
+      "problem": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "New version of checklist\nHello, Could I know what are the recent changes/updates to the checklist. As I have already submitted and I would just like to know what was there previously but the previous version of the document seems to be removed so I cannot compare to find the new changes of the checklist. Thank you.",
+    "answer": "Let me know if the link @75 works",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_25"
+  },
+  {
+    "question": "Confusion about parameters results in Part 3\nHi, What is the least number we need to record of results with different hyperparameters in Part 3 (a) and (b)? Additionally, what metrics of the RNN need to be documented in RNN result documented (10 pts) ? Thanks.",
+    "answer": "For Part 3 (a) and \"RNN result documented\": report the train and test accuracy for at least three hyperparameter combinations (including your best combination). I've added this clarification to the checklist. See updated checklist",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_29"
+  },
+  {
+    "question": "Techniques to get bouns points in Part 2\nHi, Can we use Occlusion Sensitivity Analysis to visualize features in Part 2? Thanks",
+    "answer": "Yes, occlusion sensitivity is one of the techniques stated in the paper referenced in the instructions \"Apply one of the techniques discussed in the Visualizing and Understanding Convolutional Networks paper on the convnet trained in Problem 1.\"",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_38"
+  },
+  {
+    "question": "Thanks a lot for answering my question! But is plotting multiple lines in one chart also allowed? I think it would make it more obvious for comparison.",
+    "answer": "Yes",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "followup",
+    "parent_question": "Report requirements for Q2c\nDo we also need to paste all the figures same as Q2 a and b for each configuration in Q2c? That would be a really large number of figures because I tried a lot of different configurations in Q2c. Edit: I just found that I can plot the lines with different configurations in one chart. Sorry for not noticing this before. Is this what expected in Q2c?",
+    "pair_id": "piazza_61"
+  },
+  {
+    "question": "Question about DCN structure\nI have a question regarding how to interpret the DCN model structure: conv1(5-5-1-32) - ReLU - maxpool(2-2) - conv2(5-5-32-64) - ReLU - maxpool(2-2)- fc(1024) - ReLU - DropOut(0.5) - Softmax(10) Is there a second fully connected layer between the dropout layer and the softmax? Otherwise, the dropout would apply directly to the 10-class output before softmax rather than to a hidden layer\u2018s 1024 neurons. In the skeleton code, there's an indication of a second fc layer: self.fc2 = [inset-code]. If there's indeed a second fc layer, what should the output dimension of fc1 be?",
+    "answer": "Ouput dimension of fc1 is 1024 neurons. You need fc2 to go from 1024 neurons to 10 neurons before applying softmax.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_66"
+  },
+  {
+    "question": "Questions about 1 d) 1. (mathematical derivation)\nDo we need to add regularization for 1 d) 1. (mathematical derivation)? Because in the provided code, there is one line for regularization, I'm not sure whether we should count for it in the mathematical derivation. Are we expected to write derivations for one sample (x is an vector with D dimensions) or a N samples (X is a matrix with the shape NxD)?",
+    "answer": "No, you do not Neither, you need to compute the loss derivatives in terms of the neural network's components, e.g. W_1",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_74"
+  },
+  {
+    "question": "Final Project clarification\nWhat are the exact days available for poster this year? When working on the Poster Availability Form, I saw Wednesday, 12/11 and Thursday, 12/12 are available dates. But for this year, Wednesday is on 12/10 and Thursday is on 12/11. Could you please provide a quick clarification on this matter, so that we can get better prepared for the next following dates?",
+    "answer": "Wednesday December 10th and Thursday December 11th. @132",
+    "source": "piazza",
+    "tags": [
+      "project"
+    ],
+    "type": "main",
+    "pair_id": "piazza_8"
+  },
+  {
+    "question": "It was not mentioned initially that for RNN we have to experiment for three different hyperparamters , nor its mentioned in the doc. Do I need to resubmit?",
+    "answer": "Yes, please resubmit before the assignment deadline",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "followup",
+    "parent_question": "Confusion about parameters results in Part 3\nHi, What is the least number we need to record of results with different hyperparameters in Part 3 (a) and (b)? Additionally, what metrics of the RNN need to be documented in RNN result documented (10 pts) ? Thanks.",
+    "pair_id": "piazza_31"
+  }
+]

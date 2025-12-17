@@ -1,0 +1,884 @@
+[
+  {
+    "question": "Final Project Presentation\nI noticed that the date of the final project presentation on the schedule is from December 10th to December 17th. Do we need to present it in class or just upload and submit it within this period of time?",
+    "answers": [
+      "Sorry for the late response. On December 10, we will have a virtual poster conference on the platform Gathertown. Please plan to be in a location with good internet. After you/your group fills in a survey with the times you're available on December 10, you/your group will be given a ten-minute time slot where a TA will listen to your presentation. More info will be released later! EDIT: For more info, please see the Canvas assignment named Final Project Proposal"
+    ],
+    "followups": [
+      {
+        "question": "Are there any restrictions for the final project? Can I undertake the project of LLM for extracting case information and completing RS?",
+        "answers": [
+          "The only restriction is that the final project must use deep learning, which LLMs fall under. You'll get further feedback when you submit your project proposal."
+        ]
+      },
+      {
+        "question": "Is it allowed to do transfer learning with pre-trained model and add additional layers to the pre-trained model?",
+        "answers": [
+          "Yes"
+        ]
+      },
+      {
+        "question": "Will there be a Q&A session after the presentation?",
+        "answers": [
+          "From the google doc in @109, \"Duration of poster presentations will be 5 min for presenting, 5 minutes for questions\""
+        ]
+      }
+    ],
+    "tags": [
+      "project",
+      "pin"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Are we allowed to modify the content of the poster for presentation after the uploading deadline?\nHello! Are we allowed to modify the content of our poster after the December 9th deadline for uploading, and present the most updated version on December 10th? It would be great if this flexibility is granted.",
+    "answers": [],
+    "followups": [],
+    "tags": [
+      "project",
+      "unanswered"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Issue with Gathertown Access\nEveryone in our group don't have access to the Gathertown links, both for editing and for presentation, as demonstrated in the attached screenshots. We've also not received the email for Gathertown links either. Could you please look into this issue and grant the access fo r our group? Many thanks!",
+    "answers": [
+      "The presentation link won't work until Monday due to costs @141. Only the team captain will be given access to edit the room i.e. upload the poster. I've added yg108@rice.edu . Please let me know if it works now"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Examples of Previous Poster Presentations\nHello! I was just wondering if there were any examples of previous Poster Presentations of this class. I am trying to get a better idea of what it should look like outside of just the grading rubric.",
+    "answers": [
+      "Page 3 of @109: Example Posters (Note: criteria from past semesters may have been slightly differ so poster sections may differ): https://drive.google.com/drive/folders/12Yjw4_qU4-wL0_72FOoqCOq3bjPsHdKc?usp=sharing"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Final Project clarification\nWhat are the exact days available for poster this year? When working on the Poster Availability Form, I saw Wednesday, 12/11 and Thursday, 12/12 are available dates. But for this year, Wednesday is on 12/10 and Thursday is on 12/11. Could you please provide a quick clarification on this matter, so that we can get better prepared for the next following dates?",
+    "answers": [
+      "Wednesday December 10th and Thursday December 11th. @132"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Poster Availability Form Typos\nThe dates in the google form are not correct (numerical dates and weekday names), and some of the time slots repeat.",
+    "answers": [
+      "Fixed. Sorry, I forgot to update the dates and weekday names from last year. I do not see repeated time slots"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Model&#39;s Accuracy on Final Project\nHi Instructors, We have questions about the model's accuracy for the final project. Is there a minimum accuracy that we need to achieve to get a good grade? Thank you! Best Regards,",
+    "answers": [
+      "You'll be assessed on the thoroughness and systematic nature of your project. We recognize that for some deep learning tasks, achieving exceptional performance is challenging without sufficient data and/or computational resources. I'd recommend showing that your project outperforms a naive approach/baseline. For example, if you had an EEG dataset of 100 patients with aphasia and 100 healthy controls, an 80% accurate diagnostic classifier is significantly better than naively predicting that everyone has aphasia (which would yield 50% accuracy). We wouldn't penalize a student for getting 80% accuracy instead of 90% accuracy. Another example is if you've built a CNN-based regressor that achieves an R-squared value of 0.7, you could demonstrate that it outperforms simpler regression methods, such as linear regression."
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Page limitation for project proposal\nDoes the reference page count towards the 1-4 pages limitations? If so, are we allowed to slightly go over the page limitations (e.g. 5-6 pages in total) without penalty?",
+    "answers": [
+      "@113"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Clarification on Proposal Requirement 2.b.iii\nIn the rubric for the final project proposal, as well as for the project itself, there is a section for \"Is this problem not previously solved\". I would like some clarification on this requirement. How strictly original does our project have to be? Many of the example projects seem to be working on \"solved\" problems, such as the Rice Self-Driving Car paper which is explicitly trying to replicate the results of another paper using their own models, or the poster on artificially generated music, which also notes that it is not the first project to make music using deep learning. Would these examples meet the requirement for \"not previously solved\"?",
+    "answers": [
+      "Good question. It should be clear how your project advances previous work. What gap is your project filling? This doesn't have to be solving a problem that has never been solved. This can also look like solving a well-established problem in a novel way that surpasses previous work. In the music generation poster, it was stated that SOTA was a single LSTM; the researchers tried to advance previous work by hypothesizing that using GAN and Multi-Feature prediction would \"incorporate rhythm and harmony\" in music generation. I've changed the phrasing of this requirement to clarify this (I did not write the original document)"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Are we allowed to use AI to translate the proposal content and then cite the AI we used\nDear instructors, Our team has a question about AI usage for the project proposal. One member would like to draft part of the proposal in another language and then translate it into English using an AI tool for convenience. Would this be permitted if we clearly cite the AI tool and the corresponding chat? If not, we are happy to do the translation ourselves. Thank you for your time and guidance!",
+    "answers": [
+      "Yes, you can use AI for translation"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Proposal Title Page\nDoes a title page of our proposal count for the page length requirement of 1-4 pages?",
+    "answers": [
+      "No, please use the template provided in the logistics document"
+    ],
+    "followups": [
+      {
+        "question": "My I knwo where can we find the template? I did not find it in canvas.",
+        "answers": [
+          "Sorry, I forgot to include @109 in my response",
+          "On my end, the previous examples seemed to follow the IEEE format. Nevertheless, please use the IEEE template"
+        ]
+      }
+    ],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Final Project Spec\nDear course instructors, I looked over the course website and didn't find a spec for the final project. Does it mean that as long as we use deep learning to do a project, we are good? If not, any clarifications on the requirements would be appreciated. Thanks for your response!",
+    "answers": [],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Cant find example Proposals\nHello! I remember previously seeing some of the previous Proposal examples somewhere on canvas but I cant find them anymore. Where they taken off or if they are still there could you direct me towards where to find them? Thanks!",
+    "answers": [
+      "@112_f1"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Bibliography/references in Proposal\nFor the page count max being 4, does that include the ciatations/references? Or could I have 4 pages of writing/images and then have an additional page for my references?",
+    "answers": [
+      "4 pages of writing/images + additional pages for references"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Cannot find Previous Proposal Examples\nHello! I remember seeing a folder with the previous project proposal examples on Canvas earlier in the semester, but I can\u2019t seem to find it now. Was it possibly removed? If not, could you please help me locate it? Thanks!",
+    "answers": [
+      "@112_f1"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Deliverables for the Final Project Submission\nI have a quick question\u2026 what are all the deliverables for the Final Submission of the project apart from the proposal and the presentation.. like do we need to give any write ups or code repositories or anything as such??",
+    "answers": [
+      "Thank you for the reminder, @109"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Final Project Model choice\nFor final project, can we finetune existing models or we have to come up with our own models? Thanks",
+    "answers": [
+      "Both are acceptable :)",
+      "@107_f1"
+    ],
+    "followups": [],
+    "tags": [
+      "project"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Q1c\nFor Q1c, do we need to visualize at least three hyperparameter combinations, or just one combination?",
+    "answers": [
+      "One combination is good"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "New version of checklist\nHello, Could I know what are the recent changes/updates to the checklist. As I have already submitted and I would just like to know what was there previously but the previous version of the document seems to be removed so I cannot compare to find the new changes of the checklist. Thank you.",
+    "answers": [
+      "Let me know if the link @75 works"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Frequent changes on HW2 checklist\nI noticed that the HW2 checklist has been updated multiple times, and the requirements appear to keep changing. I have just finished revising my work according to the previous updated checklist, only to find that the requirements have changed again. For example, the latest version asks to \u201cstate the quantitative performance difference, e.g., CNN outperformed RNN by X%,\u201d which was never mentioned in the assignment document. Adding such requirements on the last day feels unfair to students who submitted earlier. With the deadline only half a day away, this seems unfair to students who have already completed the assignment based on earlier versions. Such requirements should have been finalized much earlier to ensure fairness.",
+    "answers": [
+      "I apologize for my earlier response. I will not add any further additions/clarifications to the checklist. The motivation for my additions was not to alter the requirements of the assignment, but to provide a clearer understanding of what we expected from you. I did this in response to Piazza questions from students who were unclear about the requirements. This was done to prevent you from losing points due to differing interpretations of the instructions that would cause you to lose points, e.g., I interpreted comparing the CNN and RNN as comparing their performance. I acknowledge that resubmissions are inconvenient, which is why I made a Canvas announcement to warn everyone. Yes, it would have been better if the checklist had been more comprehensive from the start to avoid these clarifying questions in the first place (I wrongly assumed that this was the case since this checklist has been used in several previous iterations of this class)."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Should we cite our assignment 1 of the course?\nSince part 1 and part 3 of this assignment share the similar structure as assignment 1 part 2, I utilized the data loading, training and testing structure of assignment 1 part 2 for assignment 2's parts 2 and 3. Do we need to cite our previously written assignment?",
+    "answers": [
+      "no, you don't need to"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "MNIST or Cifar10 for assignment 2 part 3?\nFor assignment 2 part 3, we're instructed to build and brain an RNN on MNIST. However, the starter code's comment asks us to download and transform cifar10 training / test data. Can I kindly confirm that the comment is indeed wrong, and we should download and transform MNIST for assignment 2 part 3?",
+    "answers": [
+      "yes, the comments are wrong, you should use MNIST"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Confusion about parameters results in Part 3\nHi, What is the least number we need to record of results with different hyperparameters in Part 3 (a) and (b)? Additionally, what metrics of the RNN need to be documented in RNN result documented (10 pts) ? Thanks.",
+    "answers": [
+      "For Part 3 (a) and \"RNN result documented\": report the train and test accuracy for at least three hyperparameter combinations (including your best combination). I've added this clarification to the checklist. See updated checklist"
+    ],
+    "followups": [
+      {
+        "question": "Thanks for your clarification. What is the number of hidden units we need to try in Part 3 (b)? In the PDF, it states, \"Also, change the number of hidden units and see how that a\ufb00ects the loss and accuracy.\"",
+        "answers": [
+          "It refers to the variable hidden_size in the provided starter code"
+        ]
+      },
+      {
+        "question": "It was not mentioned initially that for RNN we have to experiment for three different hyperparamters , nor its mentioned in the doc. Do I need to resubmit?",
+        "answers": [
+          "Yes, please resubmit before the assignment deadline"
+        ]
+      },
+      {
+        "question": "what parameters do I need to change? optimizer and all right?",
+        "answers": [
+          "Ideas for your 3 hyperparameter combinations: \"You should modify the following parameters in the starter code. \u2022 Number of nodes in the hidden layer \u2022 Learning rate \u2022 Number of iterations \u2022 Cost (hint: use softmax cross entropy with logits) \u2022 Optimizer\""
+        ]
+      },
+      {
+        "question": "and is it okay if I write a new ipynb file for this, coz I have already trained for one set and will just be a problem otherwise?",
+        "answers": [
+          "Sorry, I was misreading the assignment. Since the assignment didn't explicitly ask to report performance for different hyperparameters of your RNN, I have decided to remove this requirement from the checklist. You only need to report the performance of your (best) RNN, which I suspect everyone was already doing in order to answer the last question comparing RNN vs CNN. Hopefully, this means you won't have to resubmit Since the assignment did explicitly ask to \"change the number of hidden units and see how that affects the loss and accuracy\", I have included this in the checklist."
+        ]
+      },
+      {
+        "question": "Yeah then is it okay if I have only used one hyperparameter combination to train the RNN right? I am not sure if I can classify that as the best model but I got a good accuracy, but here's the thing we wont exactly know which our best model is unless we have explicitly tried different combination, cause idk that seems bit weird!",
+        "answers": [
+          "Yes, one hyperparameter combination is good. I've rephrased this to be more clear \"Report Train and test accuracy for your RNN\".",
+          "Yes, that's okay"
+        ]
+      },
+      {
+        "question": "Moreover in the document it explicitly asked us to compare different hidden units for only GRUs and LSTMs, is it okay of I have done only for these two..... coz anyways in RNN we only used one set of hyper parameters.",
+        "answers": [
+          "Sorry, that was a typo, thank you for catching. Only need to compare number of hidden units for LSTM and GRU"
+        ]
+      },
+      {
+        "question": "And sorry but one last question the comparison (RNN vs CNN) and (LSTM/GRU vs RNN) questions, both can be qualitative right?",
+        "answers": [
+          "Please see updated checklist"
+        ]
+      }
+    ],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Techniques to get bouns points in Part 2\nHi, Can we use Occlusion Sensitivity Analysis to visualize features in Part 2? Thanks",
+    "answers": [
+      "Yes, occlusion sensitivity is one of the techniques stated in the paper referenced in the instructions \"Apply one of the techniques discussed in the Visualizing and Understanding Convolutional Networks paper on the convnet trained in Problem 1.\""
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Hyperparameters in report\nHello, Do we need to report all hyperparameter combinations and their related results? Or just report one hyperparameter combination with higher than 55% accuracy? Thanks.",
+    "answers": [
+      "From the checklist \"For at least three hyperparameter combinations (including your best combination)\". Also, please make your post public to help your classmates."
+    ],
+    "followups": [
+      {
+        "question": "Can we plot all the hyperparameter combinations' results in one graph? For example, plot all hyperparameter combinations' training accuracy in one graph for comparison.",
+        "answers": [
+          "Sure!"
+        ]
+      }
+    ],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "A2 Pt. 1 Configuration Change?\nDid the numbers in the instruction configuration for A2 part 1 change? For example, it used to be that: Convolutional layer 1 had 32 filters and convolutional layer 2 had 64 filters. Now it's 6 and 16. Fully connected layer 1 had input 7*7*64, output 1024. Now it's 5*5*16 and 120. Should we still do a tanh after the first fully connected layer as in the starter code? (And, more generally, should we do it after each fully connected layer, of which there are now 3?)",
+    "answers": [
+      "Yes, you can continue the assignment with the previous setting. The updated structure is based on the original LeNet. The instructions only provided a reference for the network structure. You\u2019re encouraged to experiment with different settings\u2014such as the number of output channels, dropout layers, activation functions, learning rates, etc."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "AI usage?\nI'm aware that we are suppose to deliver our own code, but just wondering for trivial part (like logging and formatting plot), can we use AI code? Thanks",
+    "answers": [
+      "Dr Patel has decided that generative AI can not be used for any part of HW2"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "learning rate in part2\nCan we change lr in the assignment#2 part2?",
+    "answers": [
+      "By part 2, I assume you don't mean \"Q2: Visualizing and Understanding Convolutional Networks\"? For Part 1 (Visualizing a CNN with CIFAR10) and Part 3 (Build and Train an RNN on MNIST), learning rates are stated as a hyperparameter you should tune (i.e., Yes)"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Is this a Typo in Assignment 2?\nIt says the third fully connected layer has an input dimension of 120, while the output dimension of the second feed forward layer is 84. Shouldn't it be 84 in terms of the input dimension of the third fc?",
+    "answers": [
+      "It was a typo, I\u2019ve updated the instructions. Thanks for pointing it out."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "size of image\nI'd like to confirm the image size requirements for Assignment 2. The instructions state that the CIFAR10 images should be 28\u00d728 grayscale images, but the original data is 32\u00d732. Should we scale the images to 28\u00d728, or keep the original 32\u00d732 for training the CNN?",
+    "answers": [
+      "If you import with torch dataset, the images are RGB, and the resolution is 32 x 32. If you import from the zip folder, the images are grayscale and of size 28 x 28. You will need to modify the network architecture according to your preferred method of importing the dataset."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "one-hot\nIf I use CrossEntropyLoss, do I still need to use one-hot?",
+    "answers": [
+      "Yes, use cross entropy (CE) with one-hot encoding. To give you an example, let's say the ground truth label is '2'. After one hot encoding, the ground truth label then becomes # corresponding label '0' '1' '2' '3' '9' one_hot = [0, 0, 1, 0, ..., 0] Let's say after softmax, your model prediction is [0.2, 0.4, ...]. Simply run CE between the prediction and one-hot encoded ground truth to obtain CE loss. To Anonymous Atom -- I realized the explanation that I gave during my office hour is a bit confusing, use the answer above instead."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Question regarding question 1 part c\nWhat are the statistics that we should include about activation for question 1, part c?",
+    "answers": [
+      "For each convolution layer, produce a singular figure visualizing the activation mean and standard deviation for each filter (x axis = filter number, y axis is activation, each filter has its own barchart box plot ). Overall, you should have two figures, each with N barcharts boxplots , N = layer's number of filters @74_f4"
+    ],
+    "followups": [
+      {
+        "question": "(In general, my question is, should we draw box plots of means and stds, or draw box plots of the original activitions? If it is the former one, how should we group the activitions to calculate means and stds?)",
+        "answers": [
+          "Please plot bar charts of the original activations, where the error bars indicate standard deviations. I'd explore the plt.bar() documentation https://towardsdatascience.com/error-bar-plots-from-a-data-frame-using-matplotlib-53026fe95491/ . Boxplots of the original activations will be accepted, as that is what I originally wrote, even though boxplots typically indicate quartiles and medians instead of means and standard deviations."
+        ]
+      }
+    ],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Assignment 1 score\nIs the assignment 1 score publish?",
+    "answers": [
+      "Only 3 of 7 TAs have completed their HW1 grading so far, which means grades are not available yet for everyone. I'll follow up with the TAs who haven't completed their grading yet, apologies for the delay"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Assignment 2 Release Date\nWhen will assignment 2 be released? On the course website it says that it should have been available on Wednesday, but it is still not on Canvas. Since we are given two weeks to complete our assignments, I would assume assignment 2 would be due two weeks after it is released on Canvas.",
+    "answers": [
+      "Sorry for the delay. HW2 should be available by tomorrow morning, and we will adjust the deadline accordingly"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment2"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Clarification on the &#34;layer size&#34; for problem f in assignment 1 part 1\nFor question f in assignment 1 part 1, the spec claims that \"Your code must be able to accept as parameters (1) the number of layers and (2) layer size\". In this case, for our DeepNeuralNetwork, should we expect a parameter as a list of integers which are the size of each layer correspondingly?",
+    "answers": [
+      "Yes, a parameter should be a list of sizes for the layers in the network."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Should we consider summation and N when deriving the derivatives?\nProblem 1d in part 1 asks us to derive the derivative of W1, b1, W2, b2 relative to the loss function. To be honest I got a bit confused about whether we should take the summation into account, and if that's the case, how to solve the problem. If we only have to start with calculating the derivative of y * log y_hat without considering the summation and the denominator N, it would be rather easier. Otherwise, we are not sure about how to compute the derivative of a scalar over a vector, and how to deal with individual entry. Screenshot_2025-10-15_at_6.39.07_PM.png",
+    "answers": [
+      "Just the relationship between the layers. Piazza post @36 would help you."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "question on 2b\nFor question 2b weights and biases, do we need to include all figures, e.g. weights figures of conv1, conv2, fc1, fc2? And for each we need to include max, min, std, mean, and histogram, correct? Thank you.",
+    "answers": [
+      "Yes, that's correct @24"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "A1 1b.2 and 1d.1 Clarification\nFor these parts asking to derive mathematically, do we need to show the step by step process to get there. Or can we simply put in a Jupyter text cell the final calculation? For example: 1b.2 d/dz tanh(z) = ... d/dz sigmoid(z) = ... d/dz relu(z) = ... 1d.1 dL/dW2 = ... dL/db2 = ... dL/dW1 = ... dL/db1 = ... Would this be sufficient for these parts, or should we show the step by step process for each equation?",
+    "answers": [
+      "Fo 1.b.2: yes (see @34_f2 for formatting) For 1.d.1: @36"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Are there any suggestions on the environment to use for the assignment?\nThe assignment 1's spec seem to didn't include any suggestion or request about the environmental setup. Are we allowed to set up the environment based on our need, or there's indeed an environmental requirement that I didn't notice?",
+    "answers": [
+      "No environmental requirement"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Late submission\nIf I submitted only few minutes late, will it count for one day? Could I use one of the late submission days?",
+    "answers": [],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "2.b. Question\nHi, I noticed the instruction says \u201cmonitor the test and validation error after each 1100 iterations (equivalently, after each epoch).\u201d But since one epoch is about 860 iterations for 55,000 training samples with a batch size of 64, should I check the errors every 1100 iterations or at the end of each epoch ?",
+    "answers": [
+      "Good question, end of each epoch"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Late Day Usage\nHi Instructors, We have two late days. Do we have to declare that we are using them? Or do we just turn the assignment in late?",
+    "answers": [
+      "You don't need to declare. Canvas conveniently tells the instruction staff how late your assignment is."
+    ],
+    "followups": [
+      {
+        "question": "What is two late days?",
+        "answers": [
+          "From the class website : Late Policy: 2 late days in total are allocated across all 3 assignments, after that 25% penalty per day Note that if you submit an assignment 0.01 days late, that counts as one whole late day."
+        ]
+      }
+    ],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Report requirements for Q2c\nDo we also need to paste all the figures same as Q2 a and b for each configuration in Q2c? That would be a really large number of figures because I tried a lot of different configurations in Q2c. Edit: I just found that I can plot the lines with different configurations in one chart. Sorry for not noticing this before. Is this what expected in Q2c?",
+    "answers": [
+      "For Q2c, produce all the plots for only one combination of your choice (sorry, I didn't realize @48 was private but I have made that public now)"
+    ],
+    "followups": [
+      {
+        "question": "Thanks a lot for answering my question! But is plotting multiple lines in one chart also allowed? I think it would make it more obvious for comparison.",
+        "answers": [
+          "Yes"
+        ]
+      }
+    ],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "2.b question\nI read the assignment#1 grading rubric, and I saw that the test and validation error after each 1100 iterations [4 pts] (equivalently, after each epoch). Do we need to do this? Because the response for @40 says that we don't have to do this.",
+    "answers": [
+      "You're correct, I removed the mention of validation from that section of the grading rubric"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Regarding Q2 c\nI have made different combinations of activation functions, initialisation techniques and training algorithms, and have trained my model. For the report part I have generated scalars that show train loss, test accuracy and loss, and validation accuracy and loss. Will that meet the checklist requirement. I haven\u2019t generated histograms weights for each layers as it would have been too much. please let me know",
+    "answers": [
+      "No, please generate histogram weights for one particular combination, e.g., tanh, random initialization, and SGD. To help your fellow students, please consider making this post public."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "2.c\nFor part 2.C of the assignment, I want to confirm whether we are expected to run and report all combinations of activations, initializations, and optimizers, or if a representative subset is acceptable.",
+    "answers": [
+      "Yes, a subset is good. According to the rubric, you only need to train the network with at least one change, see below. Rubric for that question: Completion of running the network training with at least one other configuration [3 pts] (can include different nonlinearities (tanh, sigmoid, leaky-ReLU, MaxOut,...), initialization techniques (Xavier...) and training algorithms (SGD, Momentum-based Methods, Adagrad..)) Inclusion of resultant figures [3pts]"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "question about Relu\nWhen choose Relu as the activation function, the entire background of result is a single color. The network predicts the same class across the whole grid and has learned virtually no separable boundary. How to due with this problem? Thanks.",
+    "answers": [
+      "It looks like ReLU units are \u201cdying\u201d so the hidden layer outputs are mostly zeros, which makes the network predict a single class. Try He initialization for ReLU, set a small positive bias (e.g., 0.1), lower the learning rate, and reduce L2 weight decay."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Question about DCN structure\nI have a question regarding how to interpret the DCN model structure: conv1(5-5-1-32) - ReLU - maxpool(2-2) - conv2(5-5-32-64) - ReLU - maxpool(2-2)- fc(1024) - ReLU - DropOut(0.5) - Softmax(10) Is there a second fully connected layer between the dropout layer and the softmax? Otherwise, the dropout would apply directly to the 10-class output before softmax rather than to a hidden layer\u2018s 1024 neurons. In the skeleton code, there's an indication of a second fc layer: self.fc2 = [inset-code]. If there's indeed a second fc layer, what should the output dimension of fc1 be?",
+    "answers": [
+      "Ouput dimension of fc1 is 1024 neurons. You need fc2 to go from 1024 neurons to 10 neurons before applying softmax."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "OH\nDo we still have OH for today?",
+    "answers": [
+      "It appears @Mingshi Chen didn't make it to their office hour today. I'll be on the same Zoom link from 12:45-1:45pm"
+    ],
+    "followups": [],
+    "tags": [
+      "other"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Can we change the learning rate rate in part 2?\ncan we change the learning rate in the skeleton code in part 2? With lr=0.01 in the skeleton code, I found the loss not decreasing when training. I guessed it was oscillation. And after I tried to decrease the lr, it worked well. So is it allowed change the lr in the assignment? (I know that for c) I can definitely change it, but can I also change it in a) and b)? Or I would not be able to complete the training.)",
+    "answers": [
+      "Yes, you\u2019re encouraged to experiment with different hyperparameters, just make sure to explain your findings in the report."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Do we need to create a validation set?\nIn the assignment PDF, it states: \"the MNIST data is split into three parts: 55,000 data points of training data (mnist.train), 10,000 points of test data (mnist.test), and 5,000 points of validation data (mnist.validation).\" And in Part 2(b), the requirement says: \"Also monitor the test and validation error after each 1100 iterations (equivalently, after each epoch).\" However, in the provided skeleton code , I only see: train_loader = [inset-code] test_loader = [inset-code] There is no val_loader or validate() function in the skeleton. When I looked up the PyTorch MNIST dataset online, I found that PyTorch's datasets.MNIST does not have a validation set. So, should we follow the skeleton code structure (only train and test) and ignore the requirement for monitoring the validation error, or should we manually split the PyTorch training set into 55,000 train + 5,000 validation to match the description in the PDF?",
+    "answers": [
+      "Sorry for the confusion, please follow the skeleton code structure (only train and test) In PyTorch, the MNIST dataset has a training set and a test set. For Part 2(b), please ignore any mention of a validation set and monitor accuracy/error on the test set. But you\u2019re welcome to split the training set into training and validation sets and report your findings on the validation set."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Dropout in 4-layer DCN impelmentation\nI have a question regarding the CNN architecture for Part 2. According to the assignment instructions, the required architecture is: conv1(5-5-1-32)- ReLU- maxpool(2-2)- conv2(5-5-32-64)- ReLU- maxpool(2-2)- fc(1024)- ReLU- DropOut(0.5)- Softmax(10) Based on this specification, it appears that Dropout should only be applied once, after the first fully connected layer (fc1). However, in the provided skeleton code, the __init__ method includes: class Net(nn.Module): def __init__(self): super(Net, self).__init__() self.conv1 = [inset-code] self.conv2 = [inset-code] self.conv2_drop = [inset-code] # This line self.fc1 = [inset-code] self.fc2 = [inset-code] This suggests defining a conv2_drop layer, which would imply a second Dropout after conv2. So, Should we: implement conv2_drop (Dropout after conv2 layer) in addition to the Dropout after fc1, i.e. conv1(5-5-1-32)- ReLU- maxpool(2-2)- conv2(5-5-32-64)- ReLU- maxpool(2-2)- DropOut2d(0.5) - fc(1024)- ReLU- DropOut(0.5)- Softmax(10) ? only implement Dropout after fc1 as specified in the architecture diagram, and ingore the conv2_drop in the __init__ method? Thanks for your clarification!",
+    "answers": [
+      "Good catch. Option 1. implement conv2_drop (Dropout after conv2 layer) in addition to the Dropout after fc1 Option 2. only implement dropout layer after the fc layer. You can build the basic model as described in the instructions, but you\u2019re encouraged to explore, for example, adding more layers or adding dropout."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "PDF documen\nI would like to confirm about the report format for this assignment. For the PDF report, do we only need to include the written answers and the results after running the code (such as screenshots, graphs, and outputs)? And should the actual code files be placed separately in a ZIP file instead of being included in the PDF?",
+    "answers": [
+      "From the instructions on the Canvas assignment (which doesn't match the assignment PDF itself ...): Option 1: Please submit your work for the following assignment as a PDF document, providing all answers, screenshots, and pictures required together in one document. Then include all relevant code and other files in a zip file (naming structure for this file defined in assignment instructions). Option 2: After converting your .ipynb file to a .pdf file, submit a PDF with both the code and output, i.e., code for Q1a followed by output for Q1a, etc. Make sure to run all the cells before submission. Don't forget to include textual answers to any written questions."
+    ],
+    "followups": [
+      {
+        "question": "Thanks. So for the Option 1 here, we don't need to contain any code in report, right? Do we need to zip the tensorboard result file as well?",
+        "answers": [
+          "Yes upload the tensorboard file as the 2nd file to avoid the TAs from dealing with a zip file"
+        ]
+      },
+      {
+        "question": "As for Option 2, do we need to paste the code of another .py file into Jupyter notebooks? For example, do we need to paste and modify the code of three_layer_neural_network.py into Jupyter or just import it?",
+        "answers": [
+          "You can just import it. You can upload a .py file in addition to the jupyter notebook"
+        ]
+      }
+    ],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Questions about 1 d) 1. (mathematical derivation)\nDo we need to add regularization for 1 d) 1. (mathematical derivation)? Because in the provided code, there is one line for regularization, I'm not sure whether we should count for it in the mathematical derivation. Are we expected to write derivations for one sample (x is an vector with D dimensions) or a N samples (X is a matrix with the shape NxD)?",
+    "answers": [
+      "No, you do not Neither, you need to compute the loss derivatives in terms of the neural network's components, e.g. W_1"
+    ],
+    "followups": [
+      {
+        "question": "Thanks! Maybe I did not express my question clearly. Because we need to use x to express aL/aW_1, I wonder whether we should use (x is an vector with D dimensions) or a N samples (X is a matrix with the shape NxD) when calculating.",
+        "answers": [
+          "Your derivatives should not include X at all. Express dL/dW_1 in terms of the neural network's components, i.e., a, z, w",
+          "Ah, sorry, I forgot to say this as well: Your computed derivatives should be a product of derivatives. Here is a hint, fill in the ... and question mark $$\\frac{\\mathrm{dL} }{\\mathrm{d} W_{1}} = \\frac{\\mathrm{dL} }{\\mathrm{d} ...}\\cdot ... \\cdot \\frac{\\mathrm{d?} }{\\mathrm{d} W_{1}}\\cdot$$ You don't need to explicitly compute the last derivative, which avoids including either x or X in your final answer. I apologize for the confusion. Feel free to follow up if you need further clarification.",
+          "Yes, the intermediate term should also be left in its symbolic form"
+        ]
+      }
+    ],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Question sbout 1.b.2\nHi team, For the task 1.b.2 \u201cDerive the derivatives of Tanh, Sigmoid, and ReLU\u201d, do we need to include the mathematical derivations in the report, or is it sufficient to just complete the code implementation? (what's the difference with 1.b.3) Thanks!",
+    "answers": [
+      "Both",
+      "1.b.2 is the mathematical derivation, whilst 1.b.3 is the coding implementation"
+    ],
+    "followups": [
+      {
+        "question": "So is it ok to write in hand, and paste the picture into the report?",
+        "answers": [
+          "Yes, that\u2019s perfectly fine"
+        ]
+      }
+    ],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Question about MNIST template code\nI have a question about the criterion for section #line 118 in the Mnist part of the HW. the commented part says nn.CrossEntropyLoss() but I believe the criterion we want to be using is NLLLoss since I believe that this formula embodies that. # = sum_k(-t_k * log(y_k)) Was the cross entropy part just included for us to potentially use later for playing around with the model after the initial implementation?",
+    "answers": [
+      "NLLLoss expects input as log-probabilities of each class. Obtaining log-probabilities in a neural network is easily achieved by adding a LogSoftmax layer in the last layer of your network. You may use CrossEntropyLoss instead, if you prefer not to add an extra layer. ( PyTorch docs nn.NLLLoss) So, the choice of criterion depends on the output of the last layer of your network."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Are we allowed to search over the internet to solve problems in assignment 1 and future assignments?\nJust a general question, are we allowed to search over the internet to solve problems in assignment 1 and future assignments? If allowed I'll cite them academically.",
+    "answers": [
+      "Yes, feel free to search over the internet for tutorials or debugging. But if you used someone's code, please cite."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "sum form or mean form\nso in 3 layer nn.py, i see in fit model func, we add regularization in sum form: dW2 += self.reg_lambda * self.W2 dW1 += self.reg_lambda * self.W1 does this mean in our backprop func, we should also use the sum form, which means delta don't need to be divided by number of samples? but then in loss func, i see the result is calculated using the mean form: return (1. / num_examples) * data_loss which look contradicting. So I'm a bit confused by this",
+    "answers": [
+      "Backprop works fine either way (sum vs mean). If you divide by num_examples, you're just averaging, and that gets scaled by the learning rate. If you don't, the learning rate absorbs the extra scale. What really matters is the direction of the gradient, not the exact magnitude. But for calculating loss, you need to average it to be more interpretable."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Assignment 1 deadline\nJust to confirm, the HW 1 is due to Oct 14 as stated in Canvas and not today oct7 as stated on the Course webpage?",
+    "answers": [
+      "It is due October 14. I've fixed the typo on the Assignments tab of the course page."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Visualization Problem 2 part B\nHi, I have a question on Assignment 1, problem 2, part B. This task generated so many plots, and I am not sure which one I need to put on my report. Which one do we attach to the report, the time series or scalars or distributions or histograms? Thank you! Best Regards,",
+    "answers": [
+      "Include training plots (values across time) for the following: Weights Biases Net input Activations after ReLU Activations after maxpool",
+      "Yes for @24_f1"
+    ],
+    "followups": [
+      {
+        "question": "Do we also need to paste all the same figures for all the configurations in Q2c? That would be a really large number of figures because I tried a lot of different configurations in Q2c.",
+        "answers": [
+          "Onle one combination @48"
+        ]
+      }
+    ],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Slides\nHi, Where can we download the most updated slides? The slides from the course website is missing some contents. Thanks.",
+    "answers": [
+      "To get you started, the class website's schedule has links to the slides from the 2020 version of the course: https://elec576.rice.edu/schedule-and-syllabus/ . I'll ask the professors if they want to update the slides on the website I've followed up with the profs, will keep you updated (Kesha)",
+      "Slides for Sep 24, Oct 1, and Oct 8 are updated."
+    ],
+    "followups": [],
+    "tags": [
+      "logistics"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Can we submit JupyterBook in HW1\nHello, Because we need to write code and paste the results to the PDF report. Can we use JupyterBook ( ipynb ) directly and submit it as the report? Thanks.",
+    "answers": [
+      "After converting your .ipynb file to a .pdf file, submit a PDF with both the code and output, i.e., code for Q1a followed by output for Q1a, etc. Make sure to run all the cells before submission. Don't forget to include textual answers to any written questions. This is now included in the Canvas assignment instructions:"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Deadline of HW1\nHi, HW1 is not available up until today and it seems we only have one week and a half to finish it (Dr. Ankit Patel said in class we would have 2-3 weeks to finish it). I think it's very challenging for many students in this class to meet the deadline given the amount of work needs to be done in HW1. Would you possibly consider postponing the deadline for a week (or just for a few more days)? Thank you!",
+    "answers": [
+      "We have decided to give y'all an additional week for HW1"
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Question regarding HW1\nDear Professor, The homework folder seems to be locked. Would you mind unlocking the homework? Best, Stephen Tan",
+    "answers": [
+      "Sorry for the inconvenience. We\u2019ve fixed the problem. Please let me know if it\u2019s still not visible."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment1"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Regarding zoom recording\nHi, Are the class recordings uploaded anywhere? Where can I get the recordings? Thank you.",
+    "answers": [
+      "On the Canvas course, click on Zoom in the left-hand side column (see screenshot). Then, click on cloud recordings. Finally, click on the date you're interested in.",
+      "Please consider making your post public so other students can benefit from it if they have the same question."
+    ],
+    "followups": [],
+    "tags": [
+      "logistics"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Clarification\na[:,np.nonzero(v > 0.5)[0]] extract the columns of a where vector v > 0.5 The description seems inaccurate. Since, we want only the cols in a where v > 0.5, shouldn't it be a[:, np.nonzero(v>0.5) [1] ) instead? In [ 298 ]: a Out[ 298 ]: array([[0.41418832, 0.53827719, 0.55709264], [0.54982663, 0.85611083, 0.56298725]]) In [ 299 ]: v = np.random.rand(1, 3) In [ 300 ]: v Out[ 300 ]: array([[0.080899 , 0.22611359, 0.97033752]]) In [ 302 ]: np.nonzero(v > 0.5) Out[ 302 ]: (array([0]), array([2])) In [ 303 ]: a[:, np.nonzero(v>0.5)[0]] Out[ 303 ]: array([[0.41418832], [0.54982663]])",
+    "answers": [],
+    "followups": [],
+    "tags": [
+      "assignment0"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Are we allowed to search over the internet to solve problems?\nFor task 2, there are several commands like D,V = linalg.eig(a, b), D,V = eigs(a, k=3), cg and signal.resample(x, np.ceil(len(x)/q)) that seem can't be compiled using numpy packages. Are we allowed to search over the internet to solve this problem?",
+    "answers": [
+      "Yes, some of the commands may be based on different versions of the Numpy package. You can search over to find the compatible command/version."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment0"
+    ],
+    "source": "piazza"
+  },
+  {
+    "question": "Can we compile all task results in a Jupyter Notebook for A0\nThere are many parts that require running code and copying and pasting the results. Could we instead put all the task results in a Jupyter Notebook, then either download the notebook as a PDF, or take screenshots of the results in the notebook and insert them into a Word document?",
+    "answers": [
+      "Yes you can export the notebook. Please make sure all answers are included in the notebook."
+    ],
+    "followups": [],
+    "tags": [
+      "assignment0"
+    ],
+    "source": "piazza"
+  }
+]

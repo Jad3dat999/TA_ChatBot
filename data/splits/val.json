@@ -1,0 +1,145 @@
+[
+  {
+    "question": "What are the requirements for problem 2 in assignment 2?",
+    "answer": "# 2. Visualizing and Understanding Convolutional Networks\n\nRead the paper:  \n**\"Visualizing and Understanding Convolutional Networks\" \u2014 Zeiler & Fergus**\n\n### Task:\n- Summarize the key ideas of the paper.\n\n### Optional:\nApply a visualization method (e.g., deconvolutional network) to the model trained in Problem 1.\n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "2",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Question sbout 1.b.2\nHi team, For the task 1.b.2 \u201cDerive the derivatives of Tanh, Sigmoid, and ReLU\u201d, do we need to include the mathematical derivations in the report, or is it sufficient to just complete the code implementation? (what's the difference with 1.b.3) Thanks!",
+    "answer": "1.b.2 is the mathematical derivation, whilst 1.b.3 is the coding implementation",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_79"
+  },
+  {
+    "question": "What is problem 3 in assignment 2?",
+    "answer": "# 3. Build and Train an RNN on MNIST\n\nUse the starter code `rnnMNISTStarterCode.py`.\n\nMNIST images are 28\u00d728; the RNN will process input **one row (28 pixels) at a time**.\n\n---\n\n## a) Set Up an RNN\n\nModify the following:\n\n- Hidden layer size  \n- Learning rate  \n- Training iterations  \n- Cost function (use softmax cross entropy with logits)  \n- Optimizer  \n\n---\n\n## b) Try LSTM or GRU\n\nExperiment using:\n\n- `torch.nn.GRU`\n- `torch.nn.LSTM`\n\n### Required outputs:\n- Train accuracy  \n- Test accuracy  \n- Train loss  \n\nTry varying hidden units and compare performance.\n\n---\n\n## c) Compare Against the CNN\n\nCompare results from:\n\n- This RNN  \n- The CNN you built in Assignment 1  \n\nDiscuss differences in:\n\n- Accuracy  \n- Training behavior  \n- Strengths/weaknesses  \n\n---\n\n# Collaboration Policy\n\nCollaboration is encouraged for discussing ideas, but all write-ups must be done **independently**.\n\n---\n\n# Plagiarism Policy\n\nPlagiarism is strictly prohibited.  \nCite all external sources explicitly.",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "3",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "What are the requirements for problem 3 in assignment 2?",
+    "answer": "# 3. Build and Train an RNN on MNIST\n\nUse the starter code `rnnMNISTStarterCode.py`.\n\nMNIST images are 28\u00d728; the RNN will process input **one row (28 pixels) at a time**.\n\n---\n\n## a) Set Up an RNN\n\nModify the following:\n\n- Hidden layer size  \n- Learning rate  \n- Training iterations  \n- Cost function (use softmax cross entropy with logits)  \n- Optimizer  \n\n---\n\n## b) Try LSTM or GRU\n\nExperiment using:\n\n- `torch.nn.GRU`\n- `torch.nn.LSTM`\n\n### Required outputs:\n- Train accuracy  \n- Test accuracy  \n- Train loss  \n\nTry varying hidden units and compare performance.\n\n---\n\n## c) Compare Against the CNN\n\nCompare results from:\n\n- This RNN  \n- The CNN you built in Assignment 1  \n\nDiscuss differences in:\n\n- Accuracy  \n- Training behavior  \n- Strengths/weaknesses  \n\n---\n\n# Collaboration Policy\n\nCollaboration is encouraged for discussing ideas, but all write-ups must be done **independently**.\n\n---\n\n# Plagiarism Policy\n\nPlagiarism is strictly prohibited.  \nCite all external sources explicitly.",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "3",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "2.b. Question\nHi, I noticed the instruction says \u201cmonitor the test and validation error after each 1100 iterations (equivalently, after each epoch).\u201d But since one epoch is about 860 iterations for 55,000 training samples with a batch size of 64, should I check the errors every 1100 iterations or at the end of each epoch ?",
+    "answer": "Good question, end of each epoch",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_57"
+  },
+  {
+    "question": "As for Option 2, do we need to paste the code of another .py file into Jupyter notebooks? For example, do we need to paste and modify the code of three_layer_neural_network.py into Jupyter or just import it?",
+    "answer": "You can just import it. You can upload a .py file in addition to the jupyter notebook",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "followup",
+    "parent_question": "PDF documen\nI would like to confirm about the report format for this assignment. For the PDF report, do we only need to include the written answers and the results after running the code (such as screenshots, graphs, and outputs)? And should the actual code files be placed separately in a ZIP file instead of being included in the PDF?",
+    "pair_id": "piazza_73"
+  },
+  {
+    "question": "Regarding zoom recording\nHi, Are the class recordings uploaded anywhere? Where can I get the recordings? Thank you.",
+    "answer": "On the Canvas course, click on Zoom in the left-hand side column (see screenshot). Then, click on cloud recordings. Finally, click on the date you're interested in.",
+    "source": "piazza",
+    "tags": [
+      "logistics"
+    ],
+    "type": "main",
+    "pair_id": "piazza_93"
+  },
+  {
+    "question": "Do we also need to paste all the same figures for all the configurations in Q2c? That would be a really large number of figures because I tried a lot of different configurations in Q2c.",
+    "answer": "Onle one combination @48",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "followup",
+    "parent_question": "Visualization Problem 2 part B\nHi, I have a question on Assignment 1, problem 2, part B. This task generated so many plots, and I am not sure which one I need to put on my report. Which one do we attach to the report, the time series or scalars or distributions or histograms? Thank you! Best Regards,",
+    "pair_id": "piazza_87"
+  },
+  {
+    "question": "Are we allowed to search over the internet to solve problems?\nFor task 2, there are several commands like D,V = linalg.eig(a, b), D,V = eigs(a, k=3), cg and signal.resample(x, np.ceil(len(x)/q)) that seem can't be compiled using numpy packages. Are we allowed to search over the internet to solve this problem?",
+    "answer": "Yes, some of the commands may be based on different versions of the Numpy package. You can search over to find the compatible command/version.",
+    "source": "piazza",
+    "tags": [
+      "assignment0"
+    ],
+    "type": "main",
+    "pair_id": "piazza_96"
+  },
+  {
+    "question": "MNIST or Cifar10 for assignment 2 part 3?\nFor assignment 2 part 3, we're instructed to build and brain an RNN on MNIST. However, the starter code's comment asks us to download and transform cifar10 training / test data. Can I kindly confirm that the comment is indeed wrong, and we should download and transform MNIST for assignment 2 part 3?",
+    "answer": "yes, the comments are wrong, you should use MNIST",
+    "source": "piazza",
+    "tags": [
+      "assignment2"
+    ],
+    "type": "main",
+    "pair_id": "piazza_28"
+  },
+  {
+    "question": "Thanks! Maybe I did not express my question clearly. Because we need to use x to express aL/aW_1, I wonder whether we should use (x is an vector with D dimensions) or a N samples (X is a matrix with the shape NxD) when calculating.",
+    "answer": "Your derivatives should not include X at all. Express dL/dW_1 in terms of the neural network's components, i.e., a, z, w",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "followup",
+    "parent_question": "Questions about 1 d) 1. (mathematical derivation)\nDo we need to add regularization for 1 d) 1. (mathematical derivation)? Because in the provided code, there is one line for regularization, I'm not sure whether we should count for it in the mathematical derivation. Are we expected to write derivations for one sample (x is an vector with D dimensions) or a N samples (X is a matrix with the shape NxD)?",
+    "pair_id": "piazza_75"
+  },
+  {
+    "question": "What are the requirements for problem 1 in assignment 2?",
+    "answer": "# 1. Visualizing a CNN with CIFAR10\n\nTrain a CNN on CIFAR10 and visualize early-layer filters and activations.\n\n---\n\n## a) CIFAR10 Dataset\n\nCIFAR10 consists of **32\u00d732 color images** in 10 classes:\n\nairplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.\n\nTwo import options:\n\n### **Option A (Recommended): TorchVision**\n- Images are RGB  \n- Resolution: 32\u00d732  \n\n### **Option B**\n- Use `trainCifarStarterCode.py` and provided ZIP  \n- Images are **grayscale 28\u00d728**  \n- Requires preprocessing + one-hot labels  \n\n---\n\n## b) Train LeNet5 on CIFAR10\n\nImplement and train the following variant of **LeNet5**:\n\n- Conv (5\u00d75), 6 filters \u2192 tanh  \n- MaxPool (2\u00d72)  \n- Conv (5\u00d75), 16 filters \u2192 tanh  \n- MaxPool (2\u00d72)  \n- FC: 5\u00d75\u00d716 \u2192 120 \u2192 84 \u2192 10  \n- Softmax output  \n\n### Required outputs:\n- Training accuracy plot  \n- Testing accuracy plot  \n- Training loss plot  \n- Hyperparameter experiments (LR, momentum, optimizer, etc.)\n\n---\n\n## c) Visualize the Trained Network\n\n### 1. Visualize first-layer convolution filters  \nThey should resemble **Gabor filters** (edge detectors).\n\n### 2. Visualize activations on test images  \nInclude summary statistics for each convolutional layer.\n\n---",
+    "metadata": {
+      "type": "assignment_problem",
+      "assignment": "2",
+      "problem": "1",
+      "source": "synthetic"
+    }
+  },
+  {
+    "question": "Question about MNIST template code\nI have a question about the criterion for section #line 118 in the Mnist part of the HW. the commented part says nn.CrossEntropyLoss() but I believe the criterion we want to be using is NLLLoss since I believe that this formula embodies that. # = sum_k(-t_k * log(y_k)) Was the cross entropy part just included for us to potentially use later for playing around with the model after the initial implementation?",
+    "answer": "NLLLoss expects input as log-probabilities of each class. Obtaining log-probabilities in a neural network is easily achieved by adding a LogSoftmax layer in the last layer of your network. You may use CrossEntropyLoss instead, if you prefer not to add an extra layer. ( PyTorch docs nn.NLLLoss) So, the choice of criterion depends on the output of the last layer of your network.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_81"
+  },
+  {
+    "question": "Can we change the learning rate rate in part 2?\ncan we change the learning rate in the skeleton code in part 2? With lr=0.01 in the skeleton code, I found the loss not decreasing when training. I guessed it was oscillation. And after I tried to decrease the lr, it worked well. So is it allowed change the lr in the assignment? (I know that for c) I can definitely change it, but can I also change it in a) and b)? Or I would not be able to complete the training.)",
+    "answer": "Yes, you\u2019re encouraged to experiment with different hyperparameters, just make sure to explain your findings in the report.",
+    "source": "piazza",
+    "tags": [
+      "assignment1"
+    ],
+    "type": "main",
+    "pair_id": "piazza_68"
+  }
+]
