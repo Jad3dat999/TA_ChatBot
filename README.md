@@ -256,9 +256,9 @@ If you use this project, please cite:
 ```bibtex
 @misc{tachatbot2024,
   title={TAChatBot: A RAG-based Teaching Assistant with LoRA Fine-tuning},
-  author={Contributors},
-  year={2024},
-  url={https://github.com/YOUR_USERNAME/TAChatBot}
+  author={Keyuan Yan, Rongqing Cong, Yixing Liu},
+  year={2025},
+  url={https://github.com/Jad3dat999/TA_ChatBot.git}
 }
 ```
 
